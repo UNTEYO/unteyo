@@ -7,7 +7,7 @@ function Header() {
     <div className='containerHeader'>
         <img src={Logo} className='logoHeader'></img>
         <ul className='navbarHeader'>
-            <li>About</li>
+            <li>About Us</li>
             <li>Program</li>
             <li>Contact'Us</li>
         </ul>
