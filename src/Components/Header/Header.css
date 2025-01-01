@@ -1,0 +1,30 @@
+.containerHeader {
+    width: 50vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.logoHeader {
+    width: 9vw;
+    top: -1vh;
+    left: 20vw;
+    margin-left: 20vw;
+}
+
+.navbarHeader {
+    font-family: HelveticaNow;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.2vw;
+    gap: 10vw;
+    margin-left: 25vw;
+}
+
+ul {
+    list-style: none;
+}

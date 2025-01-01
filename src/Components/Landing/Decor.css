@@ -1,0 +1,24 @@
+.likeDecor {
+    position: absolute;
+    width: 8.5vw;
+    height: auto;
+    top: 29vh;
+    left: 9vw;
+}
+
+.loveDecor {
+    position: absolute;
+    width: 8.5vw;
+    height: auto;
+    bottom: 19vh;
+    right: 13vw;
+}
+
+.spiralDecor {
+    position: absolute;
+    width: 8.5vw;
+    height: auto;
+    width: 100vw;
+    position: absolute;
+    top: 15vh;
+}
