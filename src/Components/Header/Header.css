@@ -21,10 +21,16 @@
     align-items: center;
     flex-direction: row;
     font-size: 1.2vw;
-    gap: 10vw;
-    margin-left: 25vw;
+    gap: 6vw;
+    margin-left: 20vw;
+    z-index: 2;
+    position: relative;
 }
 
 ul {
     list-style: none;
+}
+
+li {
+    width: 6vw;
 }

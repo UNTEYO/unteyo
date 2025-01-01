@@ -22,3 +22,23 @@
     position: absolute;
     top: 15vh;
 }
+
+.spray1Decor {
+    position: absolute;
+    top: -24vh;
+    right: -10vw;
+    width: 30vw;
+    z-index: 1;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.spray2Decor {
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    z-index: 1;
+    bottom: -30vh;
+    left: -11vw;
+    width: 35vw;
+}

@@ -2,6 +2,8 @@ import React from 'react'
 import Like from "../../assets/like.png"
 import Love from "../../assets/love.png"
 import Spiral from "../../assets/spiral.png"
+import Spray1 from "../../assets/spray 1.png"
+import Spray2 from "../../assets/spray 2.png"
 import "./Decor.css"
 
 function Decor() {
@@ -10,6 +12,8 @@ function Decor() {
       <img src={Like} className='likeDecor'></img>
       <img src={Love} className='loveDecor'></img>
       <img src={Spiral} className='spiralDecor'></img>
+      <img src={Spray1} className='spray1Decor'></img>
+      <img src={Spray2} className='spray2Decor'></img>
     </div>
   )
 }

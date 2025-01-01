@@ -10,7 +10,7 @@ function Header() {
             <li>About Us</li>
             <li>Program</li>
             <li>News</li>
-            <li>Contact'Us</li>
+            <li>Contact Us</li>
         </ul>
     </div>
   )
