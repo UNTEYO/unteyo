@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  column-gap: 1vw;
+}
+.subHero {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vw;
+}
+.gambar {
+  height: 3vw;
+}
