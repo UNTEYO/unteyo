@@ -42,3 +42,11 @@
     left: -11vw;
     width: 35vw;
 }
+
+.spray3Decor {
+    position: absolute;
+    width: 80vw;
+    bottom: -109.99vh;
+    left: 6vw;
+    overflow: hidden;
+}

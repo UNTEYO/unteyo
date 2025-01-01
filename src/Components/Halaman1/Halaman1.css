@@ -1,0 +1,38 @@
+.containerHalaman1 {
+    width: 100vw;
+    height: 110vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.isiHalaman1 {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+    gap: 3vh;
+    color: white;
+    font-family: HelveticaBold;
+    margin-left: 12vw;
+}
+
+.headingHalaman1 {
+    position: relative;
+    top: -5vh;
+    font-size: 4vw;
+    width: max-content;
+}
+
+.pHalaman1 {
+    font-size: 1.5vw;
+    font-family: HelveticaNow;
+}
+
+.imgHalaman1 {
+    width: 30vw;
+    height: 58vh;
+    position: relative;
+    top: 36vh;
+    left: 10vw;
+}

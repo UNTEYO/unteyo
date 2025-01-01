@@ -1,5 +1,5 @@
 import Tagline from "./tagline";
-import love from "D:/websiteunteyo/unteyo/src/assets/like.png";
+import love from "../../../assets/like.png";
 
 function Upper() {
   return (
