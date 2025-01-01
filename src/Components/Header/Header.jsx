@@ -9,6 +9,7 @@ function Header() {
         <ul className='navbarHeader'>
             <li>About Us</li>
             <li>Program</li>
+            <li>News</li>
             <li>Contact'Us</li>
         </ul>
     </div>
