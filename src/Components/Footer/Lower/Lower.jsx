@@ -2,6 +2,7 @@ import ListSegment from "./ListSegment";
 import "./lower.css";
 import MediaSos from "./MediaSos";
 import FotoIndonesia from "../../../assets/Indonesia.png";
+import EmailInput from "./EmaiInput";
 
 export default function Lower() {
   return (
@@ -14,6 +15,7 @@ export default function Lower() {
               Daftar ke buletin kami untuk mendapatkan pembaruan langsung ke
               kotak masuk Anda.
             </p>
+            <EmailInput></EmailInput>
           </section>
           <section className="lowerSecond">
             <ListSegment
@@ -44,9 +46,9 @@ export default function Lower() {
           </div>
           <div className="controllerSettings">
             <p>Privacy Policy</p>
-            <p>Privacy Policy</p>
-            <p>Privacy Policy</p>
-            <p>Privacy Policy</p>
+            <p>Terms &Conditions</p>
+            <p>Cookie Policy</p>
+            <p>Recruitment Privacy</p>
           </div>
         </div>
       </div>
