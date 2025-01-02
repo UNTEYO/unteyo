@@ -4,14 +4,19 @@
 .containerLower {
   background-color: #191c1f;
   display: flex;
+  flex-direction: column;
   height: 88vh;
   padding: 8vw;
   gap: 4vw;
+}
+.lowerMain {
+  display: flex;
 }
 .lowerFirst {
   display: flex;
   flex-direction: column;
   row-gap: 2vw;
+  padding: 1.2vw;
   width: 45%;
 }
 .heroLower {
@@ -50,4 +55,9 @@
   font-size: 1.2vw;
   text-decoration: none;
   color: #b1b9c5;
+}
+.lowerMediaSosial {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
