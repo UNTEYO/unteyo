@@ -1,7 +1,7 @@
 import ListSegment from "./ListSegment";
 import "./lower.css";
 import MediaSos from "./MediaSos";
-import FotoIndonesia from "D:/websiteunteyo/unteyo/src/assets/Indonesia.png";
+import FotoIndonesia from "../../../assets/Indonesia.png";
 
 export default function Lower() {
   return (
