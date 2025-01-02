@@ -1,0 +1,53 @@
+* {
+  color: aliceblue;
+}
+.containerLower {
+  background-color: #191c1f;
+  display: flex;
+  height: 88vh;
+  padding: 8vw;
+  gap: 4vw;
+}
+.lowerFirst {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  width: 45%;
+}
+.heroLower {
+  font-size: 4vw;
+  font-family: HelveticaBold;
+  letter-spacing: 2px;
+}
+.subHeroLower {
+  font-size: 1.7vw;
+  font-family: HelveticaNow;
+  letter-spacing: 3px;
+  color: #b1b9c5;
+}
+.lowerSecond {
+  width: 55%;
+  padding: 3vw;
+  display: flex;
+  justify-content: space-around;
+}
+.styleListSegment {
+  display: flex;
+  flex-direction: column;
+  font-family: HelveticaNow;
+}
+.headLine {
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+.styleAnchorList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.2vw;
+}
+.isiHeadline {
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: #b1b9c5;
+}
