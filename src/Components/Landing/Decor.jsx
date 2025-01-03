@@ -13,9 +13,11 @@ function Decor() {
       <img src={Like} className='likeDecor'></img>
       <img src={Love} className='loveDecor'></img>
       <img src={Spiral} className='spiralDecor'></img>
-      <img src={Spray1} className='spray1Decor'></img>
+      <div className='sprayDecor1'></div>
+      <div className='sprayDecor2'></div>
+      {/* <img src={Spray1} className='spray1Decor'></img>
       <img src={Spray2} className='spray2Decor'></img>
-      <img src={Spray3} className='spray3Decor'></img>
+      <img src={Spray3} className='spray3Decor'></img> */}
     </div>
   )
 }

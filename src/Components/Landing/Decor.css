@@ -23,7 +23,8 @@
     top: 15vh;
 }
 
-.spray1Decor {
+
+/* .spray1Decor {
     position: absolute;
     top: -24vh;
     right: -10vw;
@@ -49,4 +50,28 @@
     bottom: -109.99vh;
     left: 6vw;
     overflow: hidden;
+} */
+
+.sprayDecor1 {
+    position: absolute;
+    width: 45vw;
+    height: 75vh;
+    top: -25vh;
+    right: -15vw;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 69, 0, 0.8) 0%, rgba(255, 165, 0, 0.6) 30%, rgba(255, 165, 0, 0) 70%);
+    filter: blur(2.5vw);
+    overflow: hidden;
+}
+
+.sprayDecor2 {
+    position: absolute;
+    width: 40vw;
+    height: 70vh;
+    bottom: -40vh;
+    border-radius: 20vw;
+    left: -10vw;
+    background: radial-gradient(circle at 50% 50%, rgba(75, 0, 130, 0.8) 30%, rgba(255, 255, 255, 0.8) 80%);
+    filter: blur(2.5vw);
+    overflow: hidden;
+    rotate: 18deg;
 }
