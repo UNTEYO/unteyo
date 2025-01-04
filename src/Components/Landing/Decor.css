@@ -54,12 +54,25 @@
 
 .sprayDecor1 {
     position: absolute;
-    width: 45vw;
-    height: 75vh;
-    top: -25vh;
-    right: -15vw;
-    background: radial-gradient(circle at 50% 50%, rgba(255, 69, 0, 0.8) 0%, rgba(255, 165, 0, 0.6) 30%, rgba(255, 165, 0, 0) 70%);
-    filter: blur(2.5vw);
+    width: 15vw;
+    height: 25vh;
+    border-radius: 15vw;
+    top: 0vh;
+    right: 0vw;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 99, 71, 1) 100%, rgba(255, 69, 0, 0.9) 0%);
+    filter: blur(6vw);
+    overflow: hidden;
+}
+
+.sprayDecor1-1 {
+    position: absolute;
+    width: 30vw;
+    display: none;
+    height: 40vh;
+    top: -17vh;
+    right: -13vw;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 25%, rgba(255, 165, 0, 0) 100%);
+    filter: blur(10vw);
     overflow: hidden;
 }
 

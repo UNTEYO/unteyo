@@ -13,7 +13,8 @@ function Decor() {
       <img src={Like} className='likeDecor'></img>
       <img src={Love} className='loveDecor'></img>
       <img src={Spiral} className='spiralDecor'></img>
-      <div className='sprayDecor1'></div>
+      <div className="sprayDecor1"></div>
+      <div className='sprayDecor1-1'></div>
       <div className='sprayDecor2'></div>
       {/* <img src={Spray1} className='spray1Decor'></img>
       <img src={Spray2} className='spray2Decor'></img>
