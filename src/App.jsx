@@ -5,6 +5,7 @@ import Decor from "./Components/Landing/Decor";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Halaman1 from "./Components/Halaman1/Halaman1";
+import Halaman4 from "./Components/Halaman4/Halaman4";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Landing />
       <Decor />
       <Halaman1 />
+      <Halaman4></Halaman4>
       <Footer></Footer>
     </div>
   );
