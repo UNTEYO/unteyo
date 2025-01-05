@@ -1,5 +1,7 @@
 import React from "react";
-import coba from "../../assets/tiktok.png";
+import hubung from "../../assets/LogoHubung'ins.png";
+import perspektif from "../../assets/LogoPerspektif.png";
+import terai from "../../assets/LogoTerai.png";
 import "./Halaman4.css";
 
 export default function Halaman4() {
@@ -20,12 +22,16 @@ export default function Halaman4() {
         <div className="dukunganNpartner">
           <section>
             <h4>Supported By :</h4>
-            <img src={coba} alt="" />
+            <div className="wadahLogoDukungan">
+              <img className="logoDukungan" src={hubung} alt="" />
+            </div>
           </section>
           <section>
             <h4>Partner Us :</h4>
-            <img src={coba} alt="" />
-            <img src={coba} alt="" />
+            <div className="wadahLogoDukungan">
+              <img className="logoDukungan" src={terai} alt="" />
+              <img className="logoDukungan" src={perspektif} alt="" />
+            </div>
           </section>
         </div>
       </div>

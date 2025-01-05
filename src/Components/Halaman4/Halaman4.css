@@ -1,5 +1,7 @@
 .containerHalaman4 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   row-gap: 3vw;
   padding: 2vw;
@@ -31,7 +33,7 @@
 }
 
 /* COBA-COBA */
-.abstract-container {
+/* .abstract-container {
   position: relative;
   top: 70%;
   right: 7%;
@@ -59,8 +61,6 @@
   width: 150px;
   height: 150px;
   background: #b22e15;
-  /* top: 20%;
-  left: 25%; */
   top: 0;
   left: 30%;
   animation-delay: 0s;
@@ -70,8 +70,6 @@
   width: 180px;
   height: 180px;
   background: #e0c39f;
-  /* top: 30%;
-  left: 35%; */
   bottom: 10px;
   left: 0;
   animation-delay: -2s;
@@ -81,8 +79,6 @@
   width: 160px;
   height: 160px;
   background: #d67e45;
-  /* top: 25%;
-  left: 30%; */
   bottom: 20px;
   right: 0;
   animation-delay: -4s;
@@ -99,13 +95,142 @@
   66% {
     transform: translate(-40px, 40px) rotate(240deg);
   }
+} */
+
+.abstract-container {
+  position: relative;
+  top: 70%;
+  right: 7%;
+  width: 20vw;
+  height: 20vw;
+  animation: containerRotate 20s linear infinite;
 }
 
-.dukunganNpartner{
-    display: flex;
-    justify-content: end;
-    column-gap: 4vw;
-    margin-right: 5%;
-    font-family: HelveticaNow;
-    font-size: 1.4vw;
+@keyframes containerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2.5vw);
+  opacity: 0.8;
+  animation: move 8s ease-in-out infinite;
+}
+
+.blob-1 {
+  width: 10vw;
+  height: 10vw;
+  background: #b22e15;
+  top: 0;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  width: 12vw;
+  height: 12vw;
+  background: #e0c39f;
+  bottom: 0.7vw;
+  left: 0;
+  animation-delay: -2s;
+}
+
+.blob-3 {
+  width: 11vw;
+  height: 11vw;
+  background: #d67e45;
+  bottom: 1.3vw;
+  right: 0;
+  animation-delay: -4s;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(2.5vw, -2.5vw) rotate(120deg);
+  }
+  66% {
+    transform: translate(-2.5vw, 2.5vw) rotate(240deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .abstract-container {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .blob-1 {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .blob-2 {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .blob-3 {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .abstract-container {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .blob-1 {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .blob-2 {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .blob-3 {
+    width: 21vw;
+    height: 21vw;
+  }
+}
+
+.dukunganNpartner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2vw;
+  gap: 3vw;
+  width: 100%;
+  margin-top: auto;
+}
+.dukunganNpartner h4 {
+  font-size: 1.7vw;
+  margin-bottom: 1vw;
+  font-family: HelveticaNow;
+}
+
+.wadahLogoDukungan {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoDukungan {
+  max-width: 10vw;
+  height: auto;
+  object-fit: contain;
 }
