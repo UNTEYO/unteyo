@@ -80,7 +80,7 @@
     position: absolute;
     width: 20vw;
     height: 50vh;
-    bottom: -40vh;
+    bottom: 380vh;
     border-radius: 20vw;
     left: -7vw;
     background: radial-gradient(circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
@@ -94,7 +94,7 @@
     position: absolute;
     width: 20vw;
     height: 50vh;
-    bottom: -33vh;
+    bottom: 387vh;
     border-radius: 20vw;
     left: -2vw;
     background: radial-gradient(circle at 50% 50%, rgba(75, 0, 130, 1) 30%, rgba(106, 90, 205, 1) 80%);
@@ -108,11 +108,25 @@
     position: absolute;
     width: 20vw;
     height: 40vh;
-    bottom: -20vh;
+    bottom: 400vh;
     border-radius: 20vw;
     left: -10vw;
     background: radial-gradient(circle at 60% 63%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);
     filter: blur(2.5vw);
+    overflow: hidden;
+    rotate: 18deg;
+    z-index: 2;
+}
+
+.sprayDecor3 {
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    top: 180vh;
+    border-radius: 20vw;
+    left: 25vw;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 69, 0, 1) 40%, rgba(255, 165, 0, 1) 60%);
+    filter: blur(5vw);
     overflow: hidden;
     rotate: 18deg;
     z-index: 2;

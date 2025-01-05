@@ -1,26 +1,28 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .containerAll {
-  width: 100vw;
-  height: auto;
-  background-color: black;
-  overflow-x: hidden;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    overflow-x: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 @font-face {
-  font-family: HelveticaNow;
-  src: url("./assets/helvetica-255-webfont/Helvetica.woff");
+    font-family: HelveticaNow;
+    src: url("./assets/helvetica-255-webfont/Helvetica.woff");
 }
 
 @font-face {
-  font-family: HelveticaBold;
-  src: url("./assets/helvetica-255-webfont/Helvetica-Bold.woff");
+    font-family: HelveticaBold;
+    src: url("./assets/helvetica-255-webfont/Helvetica-Bold.woff");
 }
 
 @font-face {
-  font-family: HelveticaMiring;
-  src: url("./assets/helvetica-255-webfont/Helvetica-Oblique.woff");
+    font-family: HelveticaMiring;
+    src: url("./assets/helvetica-255-webfont/Helvetica-Oblique.woff");
 }

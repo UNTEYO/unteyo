@@ -5,6 +5,7 @@
     top: 0;
     display: flex;
     flex-direction: row;
+    z-index: 4;
 }
 
 .logoHeader {
@@ -23,7 +24,6 @@
     font-size: 1.2vw;
     gap: 6vw;
     margin-left: 20vw;
-    z-index: 2;
     position: relative;
 }
 

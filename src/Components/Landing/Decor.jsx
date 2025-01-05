@@ -18,6 +18,7 @@ function Decor() {
       <div className='sprayDecor2'></div>
       <div className='sprayDecor2-2'></div>
       <div className='sprayDecor2-2-2'></div>
+      <div className="sprayDecor3"></div>
       {/* <img src={Spray1} className='spray1Decor'></img>
       <img src={Spray2} className='spray2Decor'></img>
       <img src={Spray3} className='spray3Decor'></img> */}
