@@ -36,3 +36,16 @@
     top: 36vh;
     left: 10vw;
 }
+
+.mobile-container {
+    display: none;
+}
+
+.sprayHal1 {
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 30vw;
+    height: 20vh;
+    background: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 1) 10%);
+}
