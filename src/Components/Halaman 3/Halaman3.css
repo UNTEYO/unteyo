@@ -1,11 +1,62 @@
 .backgroundHalaman3 {
     width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 10%);
+    height: 105vh;
+    background: linear-gradient(rgba(155, 155, 155, 1) 30%, rgba(0, 0, 0, 1) 10%);
 }
 
 .containerHalaman3 {
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     backdrop-filter: blur(10vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.judulHalaman3 {
+    font-family: HelveticaBold;
+    font-size: 4vw;
+    text-align: center;
+    width: 50vw;
+    position: relative;
+    top: 10vh;
+}
+
+.containercardHalaman3 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 15vh;
+    gap: 9vw;
+}
+
+.containercard1Halaman3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+
+.imgcard1Halaman3 {
+    width: 20vw;
+    border-radius: 1.5vw;
+}
+
+.btncardHalaman3 {
+    width: 13vw;
+    height: 5vh;
+    border-radius: 0.5vw;
+    background-color: #9b9b9b;
+    border: 0.15vw white solid;
+    color: white;
+    font-family: HelveticaNow;
+    font-size: 90%;
+    transition: 0.2s;
+}
+
+.btncardHalaman3:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
 }

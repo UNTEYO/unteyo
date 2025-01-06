@@ -10,7 +10,7 @@
     position: absolute;
     width: 8.5vw;
     height: auto;
-    bottom: 19vh;
+    top: 70vh;
     right: 13vw;
 }
 
@@ -80,7 +80,7 @@
     position: absolute;
     width: 20vw;
     height: 50vh;
-    bottom: 380vh;
+    top: 68vh;
     border-radius: 20vw;
     left: -7vw;
     background: radial-gradient(circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
@@ -94,7 +94,7 @@
     position: absolute;
     width: 20vw;
     height: 50vh;
-    bottom: 387vh;
+    top: 52vh;
     border-radius: 20vw;
     left: -2vw;
     background: radial-gradient(circle at 50% 50%, rgba(75, 0, 130, 1) 30%, rgba(106, 90, 205, 1) 80%);
@@ -108,7 +108,7 @@
     position: absolute;
     width: 20vw;
     height: 40vh;
-    bottom: 400vh;
+    top: 75vh;
     border-radius: 20vw;
     left: -10vw;
     background: radial-gradient(circle at 60% 63%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);

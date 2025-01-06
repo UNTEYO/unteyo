@@ -11,7 +11,6 @@ function Halaman1() {
             <p className='pHalaman1'>Addresses academic and non-academic issues affecting students, with a focus on problem solving and creating real impact.</p>
         </section>
         <img className='imgHalaman1' src={laptopHal1}></img>
-        <div className='sprayHal1'></div>
     </div>
   )
 }
