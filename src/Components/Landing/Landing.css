@@ -37,3 +37,18 @@
   height: 100vh;
   z-index: -1;
 }
+
+.wave-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: rgba(235, 49, 49, 0.8);
+  border-radius: 50%;
+}
