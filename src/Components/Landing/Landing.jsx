@@ -6,6 +6,7 @@ function Landing() {
   return (
     <>
       <div className="containerLanding">
+        {/* <WaveAnimation></WaveAnimation> */}
         <h1 className="judulLanding">Unteyo Journey</h1>
         <h2 className="judulLanding2">Greeting Quality Students</h2>
         <h4 className="tagLanding">#BeWise</h4>

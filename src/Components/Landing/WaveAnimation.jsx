@@ -99,7 +99,7 @@ const WaveAnimation = () => {
 
   return (
     <div className="wadahCanvas">
-      <canvas ref={canvasRef} className="canvas"></canvas>
+      <div ref={canvasRef} className="canvas"></div>
     </div>
   );
 };
