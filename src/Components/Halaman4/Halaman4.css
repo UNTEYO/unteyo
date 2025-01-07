@@ -234,3 +234,64 @@
   height: auto;
   object-fit: contain;
 }
+
+.triangle-gradient {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 260px solid #ff4500;
+  position: absolute; /* Tetap di pojok kanan atas meski halaman di-scroll */
+  top: 217vw;
+  right: -3vw;
+  transform: rotate(-90deg);
+  filter: blur(30px);
+  animation: pulse 4s ease-in-out infinite;
+  z-index: 10; /* Menimpa konten lain */
+}
+
+.triangle-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7vw;
+  width: 20vw;
+  height: 15vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 68, 0, 0.8) 0%,
+    rgba(255, 140, 0, 0.6) 50%,
+    rgba(255, 160, 0, 0.4) 100%
+  );
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.right-triangle-gradient {
+  width: 0;
+  height: 0;
+  border-right: 300px solid transparent;
+  border-bottom: 300px solid #ff4500;
+  position: absolute;
+  top: 253vw;
+  left: -5vw;
+  transform: rotate(-179deg) scaleX(-1);
+  filter: blur(30px);
+  animation: pulse 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+.right-triangle-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25vw;
+  height: 15vw;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 68, 0, 0.8) 0%,
+    rgba(255, 140, 0, 0.6) 50%,
+    rgba(255, 160, 0, 0.4) 100%
+  );
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}

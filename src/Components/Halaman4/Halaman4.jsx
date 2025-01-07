@@ -13,12 +13,14 @@ export default function Halaman4() {
           <h2 className="headingHalaman4Small">With Us!</h2>
         </section>
         <div className="photo-container">
-          <div className="abstract-container">
+          {/* <div className="abstract-container">
             <div className="blob blob-1"></div>
             <div className="blob blob-2"></div>
             <div className="blob blob-3"></div>
-          </div>
+          </div> */}
         </div>
+        <div class="triangle-gradient"></div>
+        <div class="right-triangle-gradient"></div>
         <div className="dukunganNpartner">
           <section>
             <h4>Supported By :</h4>
