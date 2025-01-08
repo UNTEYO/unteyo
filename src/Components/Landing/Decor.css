@@ -1,28 +1,31 @@
 .likeDecor {
-    position: absolute;
-    width: 8.5vw;
-    height: auto;
-    top: 29vh;
-    left: 9vw;
+  position: absolute;
+  width: 8.5vw;
+  height: auto;
+  top: 29vh;
+  left: 9vw;
+  /* nambah */
+  z-index: 2;
 }
 
 .loveDecor {
-    position: absolute;
-    width: 8.5vw;
-    height: auto;
-    top: 70vh;
-    right: 13vw;
+  position: absolute;
+  width: 8.5vw;
+  height: auto;
+  top: 70vh;
+  right: 13vw;
+  /* nambah */
+  z-index: 2;
 }
 
 .spiralDecor {
-    position: absolute;
-    width: 8.5vw;
-    height: auto;
-    width: 100vw;
-    position: absolute;
-    top: 15vh;
+  position: absolute;
+  width: 8.5vw;
+  height: auto;
+  width: 100vw;
+  position: absolute;
+  top: 15vh;
 }
-
 
 /* .spray1Decor {
     position: absolute;
@@ -53,81 +56,105 @@
 } */
 
 .sprayDecor1 {
-    position: absolute;
-    width: 15vw;
-    height: 25vh;
-    border-radius: 15vw;
-    top: -10vh;
-    right: -5vw;
-    background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
-    filter: blur(2.5vw);
-    overflow: hidden;
+  position: absolute;
+  width: 15vw;
+  height: 25vh;
+  border-radius: 15vw;
+  top: -10vh;
+  right: -5vw;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 165, 0, 1) 20%,
+    rgba(255, 69, 0, 1) 80%
+  );
+  filter: blur(2.5vw);
+  overflow: hidden;
 }
 
 .sprayDecor1-1 {
-    position: absolute;
-    width: 15vw;
-    height: 25vh;
-    border-radius: 15vw;
-    top: -1vh;
-    right: -9vw;
-    background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 25%, rgba(255, 165, 0, 0) 100%);
-    filter: blur(2.5vw);
-    overflow: hidden;
+  position: absolute;
+  width: 15vw;
+  height: 25vh;
+  border-radius: 15vw;
+  top: -1vh;
+  right: -9vw;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 165, 0, 1) 25%,
+    rgba(255, 165, 0, 0) 100%
+  );
+  filter: blur(2.5vw);
+  overflow: hidden;
 }
 
 .sprayDecor2 {
-    position: absolute;
-    width: 20vw;
-    height: 50vh;
-    top: 68vh;
-    border-radius: 20vw;
-    left: -7vw;
-    background: radial-gradient(circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
-    filter: blur(2.5vw);
-    overflow: hidden;
-    rotate: 18deg;
-    z-index: 2;
+  position: absolute;
+  width: 20vw;
+  height: 50vh;
+  top: 68vh;
+  border-radius: 20vw;
+  left: -7vw;
+  background: radial-gradient(
+    circle at 40% 55%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(0, 0, 255, 0.8) 80%
+  );
+  filter: blur(2.5vw);
+  overflow: hidden;
+  rotate: 18deg;
+  z-index: 2;
 }
 
 .sprayDecor2-2 {
-    position: absolute;
-    width: 20vw;
-    height: 50vh;
-    top: 52vh;
-    border-radius: 20vw;
-    left: -2vw;
-    background: radial-gradient(circle at 50% 50%, rgba(75, 0, 130, 1) 30%, rgba(106, 90, 205, 1) 80%);
-    filter: blur(2.5vw);
-    overflow: hidden;
-    rotate: 18deg;
-    z-index: 1;
+  position: absolute;
+  width: 20vw;
+  height: 50vh;
+  top: 52vh;
+  border-radius: 20vw;
+  left: -2vw;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(75, 0, 130, 1) 30%,
+    rgba(106, 90, 205, 1) 80%
+  );
+  filter: blur(2.5vw);
+  overflow: hidden;
+  rotate: 18deg;
+  z-index: 1;
 }
 
 .sprayDecor2-2 {
-    position: absolute;
-    width: 20vw;
-    height: 40vh;
-    top: 75vh;
-    border-radius: 20vw;
-    left: -10vw;
-    background: radial-gradient(circle at 60% 63%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);
-    filter: blur(2.5vw);
-    overflow: hidden;
-    rotate: 18deg;
-    z-index: 2;
+  position: absolute;
+  width: 20vw;
+  height: 40vh;
+  top: 75vh;
+  border-radius: 20vw;
+  left: -10vw;
+  background: radial-gradient(
+    circle at 60% 63%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 69, 0, 1) 80%
+  );
+  filter: blur(2.5vw);
+  overflow: hidden;
+  rotate: 18deg;
+  z-index: 2;
 }
 
 .sprayDecor3 {
-    position: absolute;
-    width: 50vw;
-    height: 70vh;
-    top: 180vh;
-    border-radius: 20vw;
-    left: 25vw;
-    background: radial-gradient(circle at 50% 50%, rgba(255, 69, 0, 1) 40%, rgba(255, 165, 0, 1) 60%);
-    filter: blur(5vw);
-    overflow: hidden;
-    rotate: 18deg;
-    z-index: 2;
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  top: 180vh;
+  border-radius: 20vw;
+  left: 25vw;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 69, 0, 1) 40%,
+    rgba(255, 165, 0, 1) 60%
+  );
+  filter: blur(5vw);
+  overflow: hidden;
+  rotate: 18deg;
+  z-index: 2;
 }
