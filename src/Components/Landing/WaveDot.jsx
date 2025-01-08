@@ -8,7 +8,7 @@ const WaveAnimation = () => {
   useEffect(() => {
     const waveContainer = waveContainerRef.current;
     const lines = 8;
-    const dotsPerLine = 50;
+    const dotsPerLine = 40;
     const dotWidth = 4;
     const screenWidth = window.innerWidth;
 
@@ -28,19 +28,19 @@ const WaveAnimation = () => {
     const createDot = (lineIndex, position) => {
       const dot = document.createElement("div");
       dot.classList.add("wave");
-      // Menambahkan warna sesuai dengan indeks baris
       dot.style.backgroundColor = lineColors[lineIndex];
-      // Menambahkan efek glow
       dot.style.boxShadow = `0 0 5px ${lineColors[lineIndex]}`;
       waveContainer.appendChild(dot);
 
+      // Parameter yang lebih konsisten untuk gelombang yang beraturan
       return {
         element: dot,
         x: position,
-        y: window.innerHeight / 2 + lineIndex * 20,
-        length: 0.002 + lineIndex * 0.0001,
-        amplitude: 70 + lineIndex * 5,
-        offset: lineIndex * (Math.PI / 6),
+        y: window.innerHeight / 2 + lineIndex * 25, // Jarak antar baris yang konsisten
+        length: 0.002, // Panjang gelombang yang konsisten
+        amplitude: 150, // Amplitudo tinggi yang sama untuk semua baris
+        offset: lineIndex * (Math.PI / 4), // Offset fase yang beraturan
+        speed: 0.002, // Kecepatan yang konsisten
       };
     };
 
@@ -57,7 +57,7 @@ const WaveAnimation = () => {
     function animate(time) {
       dotsRef.current.forEach((lineDots, lineIndex) => {
         lineDots.forEach((dot, index) => {
-          dot.x -= 0.4;
+          dot.x -= 0.5; // Kecepatan gerak ke kiri yang konsisten
 
           if (dot.x + dotWidth < 0) {
             dot.element.remove();
@@ -66,12 +66,11 @@ const WaveAnimation = () => {
             lineDots.push(newDot);
           }
 
+          // Pergerakan gelombang yang lebih sederhana dan beraturan
           const newY =
             dot.y +
-            Math.sin(dot.x * dot.length + time * 0.005 + dot.offset) *
-              dot.amplitude +
-            Math.sin(dot.x * dot.length * 2 + time * 0.007) *
-              (dot.amplitude * 0.5);
+            Math.sin(dot.x * dot.length + time * dot.speed + dot.offset) *
+              dot.amplitude;
 
           dot.element.style.transform = `translate(${dot.x}px, ${newY}px)`;
         });
