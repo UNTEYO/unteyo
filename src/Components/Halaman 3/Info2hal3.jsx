@@ -1,23 +1,22 @@
 import React from 'react'
-import "./Info1hal3.css"
+import "./Info2hal3.css"
 
-function Info1hal3() {
-    
+function Info2hal3() {
   return (
-    <div className='infocard1'>
+    <div className='infocard2'>
                 <h3>
-                  Take the Trash: Kampus Bersih Mulai Dari Kita
+                  Story of Pilmapres: Menjadi Mahasiswa Berprestasi Utama
                 </h3>
-                <div className='DateLoc1'>
-                  <div className='date1'>
+                <div className='DateLoc2'>
+                  <div className='date2'>
                     <h4>
                       Date
                     </h4>
                     <p>
-                      December 7, 2024
+                      December 16, 2024
                     </p>
                   </div>
-                  <div className='loc1'>
+                  <div className='loc2'>
                     <h4>
                       Location
                     </h4>
@@ -31,4 +30,4 @@ function Info1hal3() {
   )
 }
 
-export default Info1hal3
+export default Info2hal3

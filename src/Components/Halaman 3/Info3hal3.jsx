@@ -1,15 +1,14 @@
 import React from 'react'
-import "./Info1hal3.css"
+import "./Info3hal3.css"
 
-function Info1hal3() {
-    
+function Info3hal3() {
   return (
-    <div className='infocard1'>
+    <div className='infocard3'>
                 <h3>
-                  Take the Trash: Kampus Bersih Mulai Dari Kita
+                  New Year New Me; Personal Branding Sebagai Resolusi Mahasiswa di Tahun 2025
                 </h3>
-                <div className='DateLoc1'>
-                  <div className='date1'>
+                <div className='DateLoc3'>
+                  <div className='date3'>
                     <h4>
                       Date
                     </h4>
@@ -17,7 +16,7 @@ function Info1hal3() {
                       December 7, 2024
                     </p>
                   </div>
-                  <div className='loc1'>
+                  <div className='loc3'>
                     <h4>
                       Location
                     </h4>
@@ -31,4 +30,4 @@ function Info1hal3() {
   )
 }
 
-export default Info1hal3
+export default Info3hal3
