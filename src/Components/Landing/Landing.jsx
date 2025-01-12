@@ -10,6 +10,7 @@ function Landing() {
         <div className="content-container">
           <h1 className="judulLanding">Unteyo Journey</h1>
           <h2 className="judulLanding2">Greeting Quality Students</h2>
+          <button className="btnLanding">Explore Our Journey</button>
           <h4 className="tagLanding">#BeWise</h4>
         </div>
       </div>

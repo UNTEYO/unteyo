@@ -7,21 +7,29 @@ const WaveAnimation = () => {
 
   useEffect(() => {
     const waveContainer = waveContainerRef.current;
-    const lines = 8;
-    const dotsPerLine = 40;
-    const dotWidth = 4;
+    const lines = 5;
+    const dotsPerLine = 100;
+    const dotWidth = 1;
     const screenWidth = window.innerWidth;
 
     // Array warna untuk setiap baris
     const lineColors = [
-      "#FF6B6B", // Merah muda
-      "#4ECDC4", // Tosca
-      "#45B7D1", // Biru muda
-      "#96CEB4", // Hijau muda
-      "#FFEEAD", // Kuning muda
-      "#D4A5A5", // Pink pudar
-      "#9370DB", // Medium purple
-      "#20B2AA", // Light sea green
+      "	#7F00FF",
+     " #4ECDC4",
+     "	#7F00FF",
+     " #4ECDC4",
+     "	#7F00FF",
+     " #4ECDC4",
+     "	#7F00FF",
+     " #4ECDC4",
+      // "#FF6B6B", // Merah muda
+      // "#4ECDC4", // Tosca
+      // "#45B7D1", // Biru muda
+      // "#96CEB4", // Hijau muda
+      // "#FFEEAD", // Kuning muda
+      // "#D4A5A5", // Pink pudar
+      // "#9370DB", // Medium purple
+      // "#20B2AA", // Light sea green
     ];
 
     // Fungsi untuk membuat titik baru dengan warna
@@ -37,8 +45,8 @@ const WaveAnimation = () => {
         element: dot,
         x: position,
         y: window.innerHeight / 2 + lineIndex * 25, // Jarak antar baris yang konsisten
-        length: 0.002, // Panjang gelombang yang konsisten
-        amplitude: 150, // Amplitudo tinggi yang sama untuk semua baris
+        length: 0.005, // Panjang gelombang yang konsisten
+        amplitude: 50, // Amplitudo tinggi yang sama untuk semua baris
         offset: lineIndex * (Math.PI / 4), // Offset fase yang beraturan
         speed: 0.002, // Kecepatan yang konsisten
       };
