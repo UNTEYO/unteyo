@@ -27,6 +27,17 @@
     position: relative;
 }
 
+.navbarHeader li {
+    transition: 0.1s;
+}
+
+.navbarHeader li:hover {
+    color: white;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
 ul {
     list-style: none;
 }
