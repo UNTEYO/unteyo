@@ -15,13 +15,13 @@ const WaveAnimation = () => {
     // Array warna untuk setiap baris
     const lineColors = [
       "	#7F00FF",
-     " #4ECDC4",
-     "	#7F00FF",
-     " #4ECDC4",
-     "	#7F00FF",
-     " #4ECDC4",
-     "	#7F00FF",
-     " #4ECDC4",
+      " #4ECDC4",
+      "	#7F00FF",
+      " #4ECDC4",
+      "	#7F00FF",
+      " #4ECDC4",
+      "	#7F00FF",
+      " #4ECDC4",
       // "#FF6B6B", // Merah muda
       // "#4ECDC4", // Tosca
       // "#45B7D1", // Biru muda
@@ -45,7 +45,7 @@ const WaveAnimation = () => {
         element: dot,
         x: position,
         y: window.innerHeight / 2 + lineIndex * 25, // Jarak antar baris yang konsisten
-        length: 0.005, // Panjang gelombang yang konsisten
+        length: 0.004, // Panjang gelombang yang konsisten
         amplitude: 50, // Amplitudo tinggi yang sama untuk semua baris
         offset: lineIndex * (Math.PI / 4), // Offset fase yang beraturan
         speed: 0.002, // Kecepatan yang konsisten
