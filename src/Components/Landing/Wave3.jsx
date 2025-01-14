@@ -49,7 +49,7 @@ const WaveAnimation = () => {
         ctx.shadowBlur = 5;
 
         for (let x = 0; x < width; x++) {
-          const xPos = x - currentTime * 100; // Speed of movement
+          const xPos = x - currentTime * 50; // Speed of movement
           const y =
             wave.y +
             Math.sin(xPos * wave.frequency + wave.offset) * wave.amplitude;
