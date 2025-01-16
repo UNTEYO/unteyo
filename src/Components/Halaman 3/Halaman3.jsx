@@ -1,13 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useState } from 'react'
 import TaketheTrash from "../../assets/takethetrash.png"
 import Pilmapres from "../../assets/pilmapres.png"
 import PersonalBranding from "../../assets/personalbranding.png"
 import Info1hal3 from "./Info1hal3"
 import Info2hal3 from './Info2hal3'
 import Info3hal3 from './Info3hal3'
+import {handleResponsive} from "../../handleResponsive"
 import "./Halaman3.css"
 
 function Halaman3() {
+  const {windowWidth, tampilanMobile} = handleResponsive()
+  
+    useEffect(() => {
+      console.log(`Lebar sekarang: ${windowWidth}`); 
+      console.log(`Tampilan mobile: ${tampilanMobile}`);
+    }, [windowWidth, tampilanMobile])
+
+    const mobileCarousel_store = [
+      <Info1hal3></Info1hal3>,
+      <Info2hal3></Info2hal3>,
+      <Info3hal3></Info3hal3>
+    ]
 
   function OnHover1 (){
     const ImgCard1 = document.querySelector(".imgcard1Halaman3")
@@ -82,11 +96,33 @@ function Halaman3() {
     }
   }
 
+  const mobileCarousel_index = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+  }
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? posters.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === posters.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+
+  
   return (
     <div className='backgroundHalaman3'>
         <main className='containerHalaman3'>
-          <h2 className='judulHalaman3'>Ongoing and Upcoming Events</h2>
-          <section className='containercardHalaman3' >
+          <h2 className={`judulHalaman3 ${
+            tampilanMobile ? "mobile-judulHalaman3" : "judulHalaman3"
+          }`}>Ongoing and Upcoming Events</h2>
+          <section className={`containercardHalaman3 ${
+            tampilanMobile ? "mobile-containercardHalaman3" : "containercardHalaman3"
+          }`} >
             <div className='containercard1Halaman3' onMouseOut={OutHover1} onMouseOver={OnHover1}>
               <img className='imgcard1Halaman3' src={TaketheTrash}></img>
               <Info1hal3></Info1hal3>
@@ -98,6 +134,13 @@ function Halaman3() {
             <div className='containercard3Halaman3' onMouseOut={OutHover3} onMouseOver={OnHover3}>
               <img className='imgcard3Halaman3'src={PersonalBranding}></img>
               <Info3hal3></Info3hal3>
+            </div>
+            <div className={`carouselHalaman3 ${
+              tampilanMobile ? "mobile-carouselHalaman3" : "carouselHalaman3"
+            }`}>
+              <div>
+                {mobileCarousel_store[1]}
+              </div>
             </div>
           </section>
         </main>

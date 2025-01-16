@@ -1,7 +1,7 @@
 .backgroundHalaman3 {
     width: 100vw;
     height: 105vh;
-    background: linear-gradient(rgba(0, 0, 0, 1) 77%, rgba(155, 155, 155, 1) 40%);
+    background: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(155, 155, 155, 1) 40%);
 }
 
 .containerHalaman3 {
@@ -96,4 +96,18 @@
     background-color: white;
     color: black;
     transition: 0.2s;
+}
+
+.mobile-judulHalaman3 {
+    font-size: 5vw;
+    width: 70vw;
+    margin-top: 12vh;
+}
+
+.mobile-containercardHalaman3 {
+    display: none;
+}
+
+.mobile-carouselHalaman3 {
+    display: flex;
 }
