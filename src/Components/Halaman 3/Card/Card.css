@@ -1,0 +1,81 @@
+.cardHalaman3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.imgcardHalaman3 {
+    width: 30vw;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    border-radius: 2vw;
+}
+
+.infocardHalaman3 {
+    width: 100%;
+    height: 100%;
+    background: none;
+    backdrop-filter: blur(0.5vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10%;
+    padding-left: 7%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.infocardHalaman3hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.isiinfocardHalaman3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.isiinfocardHalaman3 h2 {
+    width: 80%;
+}
+
+.dateloc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dateloc h3 {
+    width: 50%;
+}
+
+.dateloc p {
+    width: 50%;
+}
+
+.btninfo {
+    width: 50%;
+    height: 5vh;
+    border-radius: 1vw;
+    background-color: black;
+    border: 0.15vw solid white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btninfo:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}

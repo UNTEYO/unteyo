@@ -22,92 +22,13 @@
     top: 10vh;
 }
 
-.containercardHalaman3 {
-    display: flex;
-    flex-direction: row;
+.isiHalaman3 {
     position: relative;
     top: 15vh;
-    gap: 9vw;
-}
-
-.containercard1Halaman3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4vh;
-    position: relative;
-}
-
-.containercard1Halaman3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4vh;
-    position: relative;
-}
-
-.containercard1Halaman3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4vh;
-    position: relative;
-}
-
-.imgcard1Halaman3 {
-    width: 20vw;
-    border-radius: 1.5vw;
-}
-
-.imgcard1Halaman3Hover {
-    filter: blur(0px);
-}
-
-.imgcard2Halaman3Hover {
-    filter: blur(0px);
-}
-
-.imgcard2Halaman3 {
-    width: 20vw;
-    border-radius: 1.5vw;
-}
-
-.imgcard3Halaman3 {
-    width: 20vw;
-    border-radius: 1.5vw;
-}
-
-.btncardHalaman3 {
-    width: 13vw;
-    height: 5vh;
-    border-radius: 0.5vw;
-    background-color: #9b9b9b;
-    border: 0.15vw white solid;
-    color: white;
-    font-family: HelveticaNow;
-    font-size: 90%;
-    transition: 0.2s;
-}
-
-.btncardHalaman3:hover {
-    background-color: white;
-    color: black;
-    transition: 0.2s;
 }
 
 .mobile-judulHalaman3 {
     font-size: 5vw;
     width: 70vw;
     margin-top: 12vh;
-}
-
-.mobile-containercardHalaman3 {
-    display: none;
-}
-
-.mobile-carouselHalaman3 {
-    display: flex;
 }

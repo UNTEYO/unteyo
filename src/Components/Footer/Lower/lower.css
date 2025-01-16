@@ -1,141 +1,154 @@
 * {
-  color: aliceblue;
+    color: white;
 }
+
 .containerLower {
-  background-color: #191c1f;
-  display: flex;
-  flex-direction: column;
-  height: 88vh;
-  padding: 8vw;
-  gap: 4vw;
+    background-color: #191c1f;
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
+    padding: 8vw;
+    gap: 4vw;
 }
+
 .lowerMain {
-  display: flex;
+    display: flex;
 }
+
 .lowerFirst {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2vw;
-  padding: 1.2vw;
-  width: 45%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+    padding: 1.2vw;
+    width: 45%;
 }
+
 .heroLower {
-  font-size: 4vw;
-  font-family: HelveticaBold;
-  letter-spacing: 2px;
+    font-size: 4vw;
+    font-family: HelveticaBold;
+    letter-spacing: 2px;
 }
+
 .subHeroLower {
-  font-size: 1.7vw;
-  font-family: HelveticaNow;
-  letter-spacing: 3px;
-  color: #b1b9c5;
+    font-size: 1.7vw;
+    font-family: HelveticaNow;
+    letter-spacing: 3px;
+    color: #b1b9c5;
 }
+
 .lowerSecond {
-  width: 55%;
-  padding: 3vw;
-  display: flex;
-  justify-content: space-around;
+    width: 55%;
+    padding: 3vw;
+    display: flex;
+    justify-content: space-around;
 }
+
 .styleListSegment {
-  display: flex;
-  flex-direction: column;
-  font-family: HelveticaNow;
+    display: flex;
+    flex-direction: column;
+    font-family: HelveticaNow;
 }
+
 .headLine {
-  font-size: 1.5vw;
-  margin-bottom: 2vw;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
 }
+
 .styleAnchorList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.2vw;
 }
+
 .isiHeadline {
-  font-size: 1.2vw;
-  text-decoration: none;
-  color: #b1b9c5;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #b1b9c5;
 }
+
 .lowerMediaSosial {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
+
 .lastLower {
-  display: flex;
-  justify-content: space-between;
-  
+    display: flex;
+    justify-content: space-between;
 }
+
 .location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.1vw;
-  font-family: HelveticaNow;
-  gap: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    font-family: HelveticaNow;
+    gap: 1vw;
 }
+
 .controllerSettings {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1vw;
-  font-family: HelveticaNow;
-  width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    font-family: HelveticaNow;
+    width: 40vw;
 }
 
 .input-container {
-  display: flex;
-  justify-content: center;
-  width: 20vw;
-  padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    padding: 20px;
 }
 
 .input-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
 }
 
 .email-input {
-  width: 100%;
-  height: 4vw;
-  padding: 12px 16px;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 10px;
-  color: #e0e0e0;
-  font-size: 16px;
-  outline: none;
-  transition: all 0.2s ease;
+    width: 100%;
+    height: 4vw;
+    padding: 12px 16px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 10px;
+    color: #e0e0e0;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.2s ease;
 }
 
 .email-input::placeholder {
-  color: #808080;
+    color: #808080;
 }
 
 .email-input:focus {
-  background-color: #333333;
-  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+    background-color: #333333;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
 }
 
 .circle-button {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
-  background-color: #404040;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-color: #404040;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .circle-button:hover {
-  background-color: #505050;
+    background-color: #505050;
 }
 
 .circle-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
 }
