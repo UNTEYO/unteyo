@@ -15,7 +15,7 @@ function Landing() {
   return (
     <>
       <div className="containerLanding">
-        <Wave3 />
+        <WaveDot></WaveDot>
         <div className="content-container">
           <h1 className={`judulLanding ${
             tampilanMobile ? "mobile-judulLanding" : "judulLanding"

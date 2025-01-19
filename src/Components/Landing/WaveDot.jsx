@@ -8,7 +8,7 @@ const WaveAnimation = () => {
   useEffect(() => {
     const waveContainer = waveContainerRef.current;
     const lines = 5;
-    const dotsPerLine = 100;
+    const dotsPerLine = 50;
     const dotWidth = 1;
     const screenWidth = window.innerWidth;
 
@@ -46,7 +46,7 @@ const WaveAnimation = () => {
         x: position,
         y: window.innerHeight / 2 + lineIndex * 25, // Jarak antar baris yang konsisten
         length: 0.004, // Panjang gelombang yang konsisten
-        amplitude: 50, // Amplitudo tinggi yang sama untuk semua baris
+        amplitude: Math.random()*100, // Amplitudo tinggi yang sama untuk semua baris
         offset: lineIndex * (Math.PI / 4), // Offset fase yang beraturan
         speed: 0.002, // Kecepatan yang konsisten
       };
