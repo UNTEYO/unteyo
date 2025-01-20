@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { handleResponsive } from '../../../../handleResponsive'
 
-function Card(img, judul, date1, date2, loc1, loc2, link) {
+function Card({img, judul, date1, date2, loc1, loc2, link}) {
     const {windowWidth, tampilanMobile} = handleResponsive()
           
             useEffect(() => {
@@ -47,4 +47,4 @@ function Card(img, judul, date1, date2, loc1, loc2, link) {
   )
 }
 
-export default Card
+export default Card;
