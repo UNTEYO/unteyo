@@ -1,0 +1,21 @@
+.backgroundHalaman3 {
+    background: linear-gradient(rgba(0, 0, 0, 1)20%, rgba(80, 80, 80, 1)45%, rgba(155, 155, 155, 1)70%);
+}
+
+.containerHalaman3 {
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    backdrop-filter: blur(5vw);
+}
+
+.judulHalaman3 {
+    font-family: HelveticaBold;
+    margin-top: 10vh;
+    font-size: 4vw;
+    width: 50vw;
+    text-align: center;
+}
