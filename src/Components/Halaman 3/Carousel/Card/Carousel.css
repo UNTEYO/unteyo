@@ -1,0 +1,10 @@
+.carouselHalaman3 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+    gap: 5vw;
+}
