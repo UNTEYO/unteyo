@@ -64,7 +64,7 @@
     top: -10vh;
     right: -5vw;
     background: radial-gradient( circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
-    filter: blur(2.5vw);
+    filter: blur(5vw);
     overflow: hidden;
 }
 
@@ -75,8 +75,8 @@
     border-radius: 15vw;
     top: -1vh;
     right: -9vw;
-    background: radial-gradient( circle at 50% 50%, rgba(255, 165, 0, 1) 25%, rgba(255, 165, 0, 0) 100%);
-    filter: blur(2.5vw);
+    background: radial-gradient( circle at 50% 50%, rgba(255, 165, 0, 0.7) 10%, rgba(255, 165, 0, 0.3) 100%);
+    filter: blur(8vw);
     overflow: hidden;
 }
 
@@ -134,4 +134,59 @@
     overflow: hidden;
     rotate: 18deg;
     z-index: 2;
+}
+
+.mobile-likeDecor {
+    width: 13.5vw;
+    top: 20vh;
+    left: 12vw;
+}
+
+.mobile-loveDecor {
+    width: 15.5vw;
+    top: 52vh;
+    right: 10vw;
+}
+
+.mobile-sprayDecor1 {
+    width: 40vw;
+    height: 21vh;
+    border-radius: 30vw;
+    top: -8vh;
+    right: -27vw;
+}
+
+.mobile-sprayDecor1-1 {
+    width: 45vw;
+    height: 26vh;
+    border-radius: 35vw;
+    top: -9.5vh;
+    right: -25vw;
+}
+
+.mobile-sprayDecor2 {
+    width: 91vw;
+    height: 50vh;
+    border-radius: 50vw;
+    top: 77vh;
+    left: -59vw;
+    filter: blur(7vw);
+}
+
+.mobile-sprayDecor2-2 {
+    width: 61vw;
+    height: 37vh;
+    border-radius: 100vw;
+    top: 88vh;
+    left: -38vw;
+    filter: blur(10vw);
+}
+
+.mobile-sprayDecor3 {
+    width: 72vw;
+    height: 40vh;
+    top: 150vh;
+    left: 15vw;
+    filter: blur(20vw);
+    z-index: 0;
 }

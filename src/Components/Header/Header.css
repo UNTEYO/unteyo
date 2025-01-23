@@ -72,3 +72,51 @@ li {
     margin-top: 2vh;
     margin-left: 5vw;
 }
+
+.mobile-navbarHeader {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -20vw;
+    width: 100vw;
+    height: 34vh;
+    padding: 7%;
+    transform: translateY(-35vh);
+}
+
+.mobile-navbarHeader li {
+    color: black;
+    font-size: 4vw;
+    font-family: HelveticaBold;
+    width: 30vw;
+}
+
+.mobile-navbarHeader li:hover {
+    color: black;
+}
+
+.mobile-navClose {
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    top: 34vh;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-45vh);
+}
+
+.mobile-hamburgerClose {
+    font-size: 10vw;
+    margin: 3%;
+}
+
+.mobile-logoClose {
+    width: 16vw;
+    margin-left: 65vw;
+}

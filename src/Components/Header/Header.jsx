@@ -13,6 +13,28 @@ function Header() {
     console.log(`Tampilan mobile: ${tampilanMobile}`);
   }, [windowWidth, tampilanMobile]);
 
+  function onNav () {
+    const HamburgerOpen = document.querySelector(".hamburgerHeader")
+    const navbar = document.querySelector(".navbarHeader")
+    const navClose = document.querySelector(".navClose")
+    
+    navbar.style.transform = "translateY(0)"
+    navClose.style.transform = "translateY(0)"
+    navbar.style.transition = "0.5s"
+    navClose.style.transition = "0.5s"
+  }
+
+  function outNav () {
+    const HamburgerOpen = document.querySelector(".hamburgerHeader")
+    const navbar = document.querySelector(".navbarHeader")
+    const navClose = document.querySelector(".navClose")
+    
+    navbar.style.transform = "translateY(-35vh)"
+    navClose.style.transform = "translateY(-45vh)"
+    navbar.style.transition = "0.5s"
+    navClose.style.transition = "0.5s"
+  }
+
   return (
     <div
       className={`containerHeader ${
@@ -24,6 +46,7 @@ function Header() {
         className={`hamburgerHeader ${
           tampilanMobile ? "mobile-hamburgerHeader" : "hamburgerHeader"
         }`}
+        onClick={onNav}
       />
       <img
         src={Logo}
@@ -41,6 +64,19 @@ function Header() {
         <li>News</li>
         <li>Contact Us</li>
       </ul>
+      <div className={`navClose ${
+          tampilanMobile ? "mobile-navClose" : "navClose"
+        }`}>
+          <FontAwesomeIcon icon={faBars}
+          className={`hamburgerClose ${
+            tampilanMobile ? "mobile-hamburgerClose" : "hamburgerClose"
+          }`}
+          onClick={outNav}
+          ></FontAwesomeIcon>
+          <img src={Logo} className={`logoCloase ${
+            tampilanMobile ? "mobile-logoClose" : "logoClose"
+          }`}></img>
+        </div>
     </div>
   );
 }
