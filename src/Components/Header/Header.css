@@ -66,6 +66,10 @@ li {
     display: none;
 }
 
+.navClose {
+    display: none;
+}
+
 .mobile-hamburgerHeader {
     display: block;
     font-size: 12.5vw;
