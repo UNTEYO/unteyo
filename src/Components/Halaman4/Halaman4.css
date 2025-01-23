@@ -1,7 +1,7 @@
 .page-4 {
   background: linear-gradient(#9b9b9b 70%, #000000 10%);
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
 }
 
 .containerHalaman4 {
@@ -11,7 +11,7 @@
   flex-direction: column;
   position: relative;
   row-gap: 0.7vw;
-  height: 110vh;
+  height: 100vh;
 }
 
 .isiHalaman4 {
@@ -47,13 +47,13 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 4vw;
+  margin-right: 40px;
   gap: 3vw;
   width: 100%;
-  position: relative;
+  row-gap: 50px;
 }
 
-.dukunganNpartner h4 {
+.heading4 {
   font-size: 1.7vw;
   margin-bottom: 1vw;
   font-family: HelveticaNow;
@@ -241,10 +241,13 @@
     height: 21vw;
   }
 }
+.mobile-abstract-container {
+  right: 15%;
+}
 .mobile-photo-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 70%;
   background: linear-gradient(#8b8b8b1a, #000000),
     url("../../assets/anggota2.png");
   background-size: contain;
@@ -252,3 +255,23 @@
   background-repeat: no-repeat;
   top: 1vw;
 }
+.mobile-dukunganNpartner {
+  justify-content: center;
+  margin-right: 0;
+  gap: 5vw;
+  text-align: center;
+}
+.mobile-heading4 {
+  font-size: 4vw;
+  margin-bottom: 2vw;
+}
+.mobile-headingHalaman4 {
+  font-size: 5vw;
+}
+.headingHalaman4Small {
+  font-size: 4.3vw;
+}
+.mobile-logoDukungan{
+  min-width: 60px;
+}
+

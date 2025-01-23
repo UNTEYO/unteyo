@@ -5,6 +5,7 @@ import terai from "../../assets/LogoTerai.png";
 import "./Halaman4.css";
 import { handleResponsive } from "../../handleResponsive";
 
+
 export default function Halaman4() {
 const { windowWidth, tampilanMobile } = handleResponsive();
 
