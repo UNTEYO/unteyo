@@ -1,11 +1,18 @@
 import Tagline from "./tagline";
 import love from "../../../assets/like.png";
 import "./Upper.css";
+import { handleResponsive } from "../../../handleResponsive";
 
 function Upper() {
+  const { windowWidth, tampilanMobile } = handleResponsive();
+  
   return (
     <>
-      <div className="styleTagline">
+      <div
+        className={`styleTagline ${
+          tampilanMobile ? "mobile-styleTagline" : "styleTagline"
+        }`}
+      >
         <Tagline
           author="Wahai Manusia"
           author1="Learn more"
