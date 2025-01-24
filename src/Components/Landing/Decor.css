@@ -125,15 +125,15 @@
 .sprayDecor3 {
     position: absolute;
     width: 50vw;
-    height: 70vh;
-    top: 180vh;
+    height: 60vh;
+    top: 127vh;
     border-radius: 20vw;
-    left: 25vw;
+    left: 48vw;
     background: radial-gradient( circle at 50% 50%, rgba(255, 69, 0, 1) 40%, rgba(255, 165, 0, 1) 60%);
-    filter: blur(5vw);
+    filter: blur(13vw);
     overflow: hidden;
     rotate: 18deg;
-    z-index: 2;
+    z-index: 0;
 }
 
 .mobile-likeDecor {

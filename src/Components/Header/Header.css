@@ -106,7 +106,7 @@ li {
 
 .mobile-navClose {
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     background-color: black;
     position: absolute;
     top: 34vh;
@@ -116,11 +116,11 @@ li {
 }
 
 .mobile-hamburgerClose {
-    font-size: 10vw;
+    font-size: 12.5vw;
     margin: 3%;
 }
 
 .mobile-logoClose {
-    width: 16vw;
+    width: 24vw;
     margin-left: 65vw;
 }

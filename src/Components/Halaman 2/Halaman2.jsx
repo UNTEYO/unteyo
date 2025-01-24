@@ -20,7 +20,9 @@ function Halaman2() {
       <h2 className={`judulHalaman2 ${
         tampilanMobile ? "mobile-judulHalaman2" : "judulHalaman2"
       }`}>Our Program</h2>
-    <section className='ContainerisiHalaman2'>
+    <section className={`ContainerisiHalaman2 ${
+      tampilanMobile ? "mobile-ContainerisiHalaman2" : "ContainerisiHalaman2"
+    }`}>
         <div className={`isiHalaman2 ${
           tampilanMobile ? "mobile-isiHalaman2" : "isiHalaman2"
         }`}>
