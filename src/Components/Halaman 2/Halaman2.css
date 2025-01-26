@@ -34,15 +34,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 24vw;
     height: 20vh;
     gap: 2vw;
     margin: 1.5%;
+    border: 0.1vw solid linear-gradient(#000 20%, purple, white); /* Solid white border */
+}
+/* Keyframes for spinning animation */
+@keyframes spin {
+    0% {
+        border-color: white;
+    }
+    25% {
+        border-color: black;
+    }
+    50% {
+        border-color: purple;
+    }
+    75% {
+        border-color: black;
+    }
+    100% {
+        border-color: white;
+    }
 }
 
 .isiHalaman2 h3 {
     width: 10vw;
-    font-size: 2.5vw;
+    font-size: 1.8vw;
 }
 
 .imgHal2 {
@@ -58,6 +77,9 @@
     width: 25vw;
     flex-direction: column-reverse;
     font-size: 2.9vw;
+}
+
+.mobile-imgHal2 {
 }
 
 .mobile-imgHal2 {
