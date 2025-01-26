@@ -22,11 +22,13 @@
     top: -5vh;
     font-size: 4vw;
     width: max-content;
+    z-index: 2;
 }
 
 .pHalaman1 {
     font-size: 1.5vw;
     font-family: HelveticaNow;
+    z-index: 2;
 }
 
 .imgHalaman1 {
@@ -35,6 +37,7 @@
     position: relative;
     top: 36vh;
     left: 10vw;
+    z-index: 2;
 }
 
 .mobile-container {

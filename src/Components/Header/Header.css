@@ -1,15 +1,22 @@
 .containerHeader {
-    width: 50vw;
-    height: auto;
+    width: 100vw;
     position: fixed;
     top: 0;
     display: flex;
     flex-direction: row;
     z-index: 4;
+    backdrop-filter: blur(0);
+    transition: max-height 0.5s; /* Change to max-height transition */
+
+}
+
+.scrolled {
+    backdrop-filter: blur(1vw);
+    transition: max-height 0.5s; /* Ensure transition applies to max-height */
 }
 
 .logoHeader {
-    width: 9vw;
+    width: 7.5vw;
     top: -1vh;
     left: 20vw;
     margin-left: 20vw;
@@ -112,7 +119,7 @@ li {
     top: 34vh;
     display: flex;
     flex-direction: row;
-    transform: translateY(-45vh);
+    transform: translateY(-49vh);
 }
 
 .mobile-hamburgerClose {

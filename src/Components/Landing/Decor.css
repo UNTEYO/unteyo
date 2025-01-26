@@ -133,7 +133,7 @@
     filter: blur(13vw);
     overflow: hidden;
     rotate: 18deg;
-    z-index: 0;
+    z-index: 2;
 }
 
 .mobile-likeDecor {
