@@ -18,7 +18,7 @@ const WaveAnimation = () => {
   const config = useMemo(
     () => ({
       lines: isMobile ? 3 : 5, // Reduced lines for mobile
-      dotsPerLine: isMobile ? 10 : 10, // Reduced dots per line for mobile
+      dotsPerLine: isMobile ? 20 : 40, // Reduced dots per line for mobile
       dotSize: isMobile ? 2 : 2.5,
       baseSpeed: 0.5,
       waveSpeed: isMobile ? 0.003 : 0.002,
