@@ -1,18 +1,8 @@
-import React, {
-  useEffect,
-  useRef,
-  useState,
-  useCallback,
-  useMemo,
-} from "react";
-import { Settings, Play, Pause, Monitor, Smartphone } from "lucide-react";
+import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
 
 const WaveAnimation = () => {
   // Device detection
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
-  const [isPortrait, setIsPortrait] = useState(
-    () => window.innerHeight > window.innerWidth
-  );
 
   // Refs for performance
   const waveContainerRef = useRef(null);
@@ -22,23 +12,21 @@ const WaveAnimation = () => {
   const fpsRef = useRef(0);
 
   // State management
-  const [isPaused, setIsPaused] = useState(false);
-  const [showControls, setShowControls] = useState(false);
-  const [performanceMode, setPerformanceMode] = useState(false);
+  const [isPaused] = useState(false); // Removed setIsPaused
 
   // Memoized configuration based on device
   const config = useMemo(
     () => ({
-      lines: isMobile ? 5 : 7,
-      dotsPerLine: isMobile ? 40 : 80,
+      lines: isMobile ? 3 : 5, // Reduced lines for mobile
+      dotsPerLine: isMobile ? 10 : 10, // Reduced dots per line for mobile
       dotSize: isMobile ? 2 : 2.5,
       baseSpeed: 0.5,
       waveSpeed: isMobile ? 0.003 : 0.002,
-      amplitudeRange: isMobile ? [30, 80] : [50, 120],
-      spacing: isMobile ? 20 : 30,
+      amplitudeRange: isMobile ? [20, 60] : [50, 120], // Adjusted amplitude for mobile
+      spacing: isMobile ? 15 : 30,
       referenceWidth: 1920,
       maxFPS: 60,
-      touchRadius: isMobile ? 80 : 100,
+      touchRadius: isMobile ? 60 : 100,
       minOpacity: 0.4,
       maxOpacity: 1,
     }),
@@ -63,10 +51,10 @@ const WaveAnimation = () => {
   const getSpeedAdjustment = useCallback(
     (screenWidth) => {
       return (
-        (screenWidth / config.referenceWidth) * (performanceMode ? 1.2 : 1)
+        (screenWidth / config.referenceWidth)
       );
     },
-    [config.referenceWidth, performanceMode]
+    [config.referenceWidth]
   );
 
   // Enhanced dot creation with performance considerations
@@ -86,9 +74,7 @@ const WaveAnimation = () => {
       // Apply styles efficiently
       Object.assign(dot.style, {
         backgroundColor: color,
-        boxShadow: performanceMode
-          ? `0 0 4px ${glow}`
-          : `0 0 8px ${glow}, 0 0 12px ${glow}`,
+        boxShadow: `0 0 8px ${glow}`,
         width: `${config.dotSize}px`,
         height: `${config.dotSize}px`,
         borderRadius: "50%",
@@ -112,34 +98,7 @@ const WaveAnimation = () => {
         targetAmplitude: amplitude,
       };
     },
-    [config, lineColors, performanceMode]
-  );
-
-  // Handle interactions (mouse/touch) with debouncing
-  const handleInteraction = useCallback(
-    (x, y) => {
-      if (!waveContainerRef.current) return;
-
-      const rect = waveContainerRef.current.getBoundingClientRect();
-      const interactionX = x - rect.left;
-      const interactionY = y - rect.top;
-
-      dotsRef.current.forEach((lineDots) => {
-        lineDots.forEach((dot) => {
-          const dx = interactionX - dot.x;
-          const dy = interactionY - dot.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          if (distance < config.touchRadius) {
-            dot.targetAmplitude = config.amplitudeRange[1] * 1.5;
-            // Gradual amplitude return
-            setTimeout(() => {
-              dot.targetAmplitude = dot.amplitude;
-            }, 1000);
-          }
-        });
-      });
-    },
-    [config.touchRadius, config.amplitudeRange]
+    [config, lineColors]
   );
 
   // Main animation loop with optimizations
@@ -171,61 +130,27 @@ const WaveAnimation = () => {
             dot.x = screenWidth;
           }
 
-          // Smooth amplitude transition
-          if (dot.targetAmplitude !== undefined) {
-            dot.amplitude += (dot.targetAmplitude - dot.amplitude) * 0.1;
-          }
-
           const primaryWave =
             Math.sin(dot.x * dot.length + timestamp * dot.speed + dot.offset) *
             dot.amplitude;
-          const secondaryWave = performanceMode
-            ? 0
-            : Math.sin(dot.x * dot.length * 2 + timestamp * dot.speed * 1.5) *
-              (dot.amplitude * 0.3);
 
-          const newY = dot.y + primaryWave + secondaryWave;
+          const newY = dot.y + primaryWave;
 
           // Batch transform updates
           dot.element.style.transform = `translate(${dot.x}px, ${newY}px)`;
-
-          // Optimized edge fade
-          const edgeFade = Math.max(
-            config.minOpacity,
-            Math.min(
-              dot.x / 100,
-              (screenWidth - dot.x) / 100,
-              config.maxOpacity
-            )
-          );
-          dot.element.style.opacity = edgeFade;
         });
       });
 
       animationFrameRef.current = requestAnimationFrame(animate);
     },
-    [config, isPaused, getSpeedAdjustment, performanceMode]
+    [config, isPaused, getSpeedAdjustment]
   );
 
   // Initialize and handle device detection
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      const height = window.innerHeight;
       setIsMobile(width <= 768);
-      setIsPortrait(height > width);
-
-      if (waveContainerRef.current) {
-        const screenWidth = width;
-        dotsRef.current.forEach((lineDots, lineIndex) => {
-          lineDots.forEach((dot, dotIndex) => {
-            const spacing = screenWidth / config.dotsPerLine;
-            dot.x = dotIndex * spacing;
-            dot.originalX = dot.x;
-            dot.y = height / 2 + lineIndex * config.spacing;
-          });
-        });
-      }
     };
 
     // Initialize dots
@@ -248,28 +173,7 @@ const WaveAnimation = () => {
       animationFrameRef.current = requestAnimationFrame(animate);
     }
 
-    // Event listeners for interaction
-    const touchHandler = (e) => {
-      e.preventDefault();
-      const touch = e.touches[0];
-      handleInteraction(touch.clientX, touch.clientY);
-    };
-
-    const mouseHandler = (e) => {
-      handleInteraction(e.clientX, e.clientY);
-    };
-
     window.addEventListener("resize", handleResize);
-    if (isMobile) {
-      waveContainerRef.current?.addEventListener("touchmove", touchHandler, {
-        passive: false,
-      });
-      waveContainerRef.current?.addEventListener("touchstart", touchHandler, {
-        passive: false,
-      });
-    } else {
-      waveContainerRef.current?.addEventListener("mousemove", mouseHandler);
-    }
 
     // Cleanup
     return () => {
@@ -277,27 +181,12 @@ const WaveAnimation = () => {
         cancelAnimationFrame(animationFrameRef.current);
       }
       window.removeEventListener("resize", handleResize);
-      if (isMobile) {
-        waveContainerRef.current?.removeEventListener(
-          "touchmove",
-          touchHandler
-        );
-        waveContainerRef.current?.removeEventListener(
-          "touchstart",
-          touchHandler
-        );
-      } else {
-        waveContainerRef.current?.removeEventListener(
-          "mousemove",
-          mouseHandler
-        );
-      }
       dotsRef.current.forEach((lineDots) => {
         lineDots.forEach((dot) => dot.element.remove());
       });
       dotsRef.current = [];
     };
-  }, [config, animate, createDot, handleInteraction, isMobile]);
+  }, [config, animate, createDot]);
 
   return (
     <div className="relative w-full h-screen bg-black overflow-hidden">

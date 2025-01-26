@@ -15,7 +15,7 @@ function Landing() {
   return (
     <>
       <div className="containerLanding">
-        {/* <WaveDot></WaveDot> */}
+        <WaveDot></WaveDot>
         <div className="content-container">
           <h1
             className={`judulLanding ${
