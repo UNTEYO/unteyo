@@ -71,3 +71,37 @@
     transition: 0.3s;
 }
 
+.mobile-imgcardHalaman3 {
+    width: 60vw;
+    grid-column: 1 / 2;  
+    grid-row: 1 / 2;
+    border-radius: 2.5vw;
+}
+
+.mobile-infocardHalaman3 {
+    grid-column: 1 / 2;  
+    grid-row: 1 / 2;
+}
+
+.mobile-judulcardHalaman3 {
+    font-size: 70%;
+}
+
+.mobile-dateloc h4 {
+    font-size: 57%;
+}
+
+.mobile-dateloc p {
+    font-size: 50%;
+}
+
+.mobile-btninfo {
+    width: 35%;
+    height: 6%;
+    font-size: 45%;
+    border-radius: 1vw;
+}
+
+.mobile-btninfo:hover {
+    border: 0.1vw solid white;
+}

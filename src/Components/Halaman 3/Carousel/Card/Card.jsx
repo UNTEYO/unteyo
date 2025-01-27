@@ -24,7 +24,7 @@ function Card({ id, img, judul, date1, date2, loc1, loc2, link }) {
       <img
         src={img}
         className={`imgcradHalaman3 ${
-          tampilanMobile ? "imgcardHalaman3" : "imgcardHalaman3"
+          tampilanMobile ? "mobile-imgcardHalaman3" : "imgcardHalaman3"
         }`}
       />
       <div

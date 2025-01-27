@@ -188,5 +188,5 @@
     top: 150vh;
     left: 15vw;
     filter: blur(20vw);
-    z-index: 0;
+    z-index: 2;
 }
