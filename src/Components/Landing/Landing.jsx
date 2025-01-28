@@ -9,6 +9,8 @@ function Landing() {
   const [prevScrollY, setPrevScrollY] = useState(0)
 
   useEffect(() => {
+    const lenis = new Lenis({});
+
     const handleScroll = () => {
       const currentscrollY = window.scrollY + 1
       if (currentscrollY > window.scrollY) {
@@ -22,9 +24,16 @@ function Landing() {
       }
     };
 
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      lenis.destroy();
     };
   }, []);
 

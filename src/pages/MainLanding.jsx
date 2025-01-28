@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../App.css";
 import Decor from "../Components/Landing/Decor";
 import Landing from "../Components/Landing/Landing";
@@ -10,6 +10,20 @@ import Halaman4 from "../Components/Halaman4/Halaman4";
 import Footer from "../Components/Footer/Footer";
 
 function MainLanding() {
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy()
+    }
+  }, [])
   return (
     <div className="containerAll">
       <Header></Header>

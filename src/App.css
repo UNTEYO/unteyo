@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .containerAll {
     width: 100vw;
     height: auto;

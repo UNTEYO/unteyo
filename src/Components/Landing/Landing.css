@@ -17,7 +17,7 @@
     font-family: HelveticaBold;
     position: relative;
     bottom: 5vh;
-    animation: slideInLeft 1s ease forwards; /* Apply the animation */
+    animation: slideInLeft 2s ease forwards; /* Apply the animation */
 }
 
 .judulLanding2 {
@@ -25,7 +25,7 @@
     font-weight: 100;
     position: relative;
     bottom: 4vh;
-    animation: slideInRight 1s ease forwards;
+    animation: slideInRight 2s ease forwards;
 }
 
 .btnLanding {
@@ -40,6 +40,7 @@
     transition: 0.3s;
     position: relative;
     top: 21vh;
+    animation: slideDown 2s ease forwards;
 }
 
 .btnLanding:hover {
@@ -54,6 +55,7 @@
     font-weight: 400;
     top: 25vh;
     font-family: HelveticaMiring;
+    animation: slideDown 2s ease forwards;
 }
 
 .wave-container {
@@ -125,6 +127,17 @@
         opacity: 1;
     }
 }
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 /* 
 @keyframes slideBack {
     0% {
@@ -136,5 +149,5 @@
 }
 
 .judulLanding.slide-back {
-    animation: slideBack 0.5s ease forwards; /* Apply the slide back animation */
+    animation: slideBack 0.5s ease forwards; /* Apply the slide back animation 
 } */
