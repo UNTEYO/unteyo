@@ -75,10 +75,10 @@ function Header() {
           tampilanMobile ? "mobile-navbarHeader" : "navbarHeader"
         }`}
       >
-        <li>About Us</li>
-        <li>Program</li>
-        <li>News</li>
-        <li>Contact Us</li>
+        <li className="li-header">About Us</li>
+        <li className="li-header">Program</li>
+        <li className="li-header">News</li>
+        <li className="li-header">Contact Us</li>
       </ul>
       <div className={`navClose ${
           tampilanMobile ? "mobile-navClose" : "navClose"
