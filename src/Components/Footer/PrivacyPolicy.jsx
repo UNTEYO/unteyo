@@ -213,16 +213,16 @@ const AdvancedPrivacyPolicy = () => {
             hubungi kami:
           </p>
           <ul className="list-pp">
-            <li className="list-item-pp">Email: privacy@perusahaananda.com</li>
+            <li className="list-item-pp">Email: unteyo.com</li>
             <li className="list-item-pp">Telepon: (021) 1234-5678</li>
             <li className="list-item-pp">
-              Alamat: Jl. Contoh No. 123, Jakarta
+              Alamat: Jogja
             </li>
           </ul>
         </section>
 
         <footer className="footer-pp">
-          <p>© 2025 Nama Perusahaan Anda. Seluruh hak cipta dilindungi.</p>
+          <p>© 2025 UNTEYO. Seluruh hak cipta dilindungi.</p>
         </footer>
       </main>
 
