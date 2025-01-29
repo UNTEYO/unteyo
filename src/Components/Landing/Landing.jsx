@@ -1,16 +1,41 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Landing.css";
 import WaveDot from "./WaveDot";
 import { handleResponsive } from "../../handleResponsive";
-import Wave3 from "./Wave3";
 
 function Landing() {
-  const { windowWidth, tampilanMobile } = handleResponsive();
+  const { tampilanMobile } = handleResponsive();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0)
 
   useEffect(() => {
-    console.log(`Lebar sekarang: ${windowWidth}`);
-    console.log(`Tampilan mobile: ${tampilanMobile}`);
-  }, [windowWidth, tampilanMobile]);
+    const lenis = new Lenis({});
+
+    const handleScroll = () => {
+      const currentscrollY = window.scrollY + 1
+      if (currentscrollY > window.scrollY) {
+        setIsScrolled(true)
+        const judul1 = document.querySelector(".judulLanding")
+        judul1.style.transfrom = "translateX(1)"
+        console.log("kontol")
+      } else {
+        setIsScrolled(false);
+        console.log("Memek")
+      }
+    };
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -18,7 +43,7 @@ function Landing() {
         <WaveDot></WaveDot>
         <div className="content-container">
           <h1
-            className={`judulLanding ${
+            className={`judulLanding ${isScrolled ? "slide-back" : ""} ${
               tampilanMobile ? "mobile-judulLanding" : "judulLanding"
             }`}
           >

@@ -23,7 +23,10 @@
     font-size: 4vw;
     width: max-content;
     z-index: 2;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: transform 0.5s ease; /* Smooth transition */
 }
+
 
 .pHalaman1 {
     font-size: 1.5vw;
@@ -40,8 +43,8 @@
     z-index: 2;
 }
 
-.mobile-container {
-    display: none;
+.mobile-containerHalaman1 {
+    height: 100vh;
 }
 
 .mobile-containerHalaman1 {
@@ -66,7 +69,7 @@
 
 .mobile-imgHalaman1 {
     width: 41vw;
-    height: 24vh;
+    height: 22vh;
     top: 42vh;
     left: 50vw;
 }

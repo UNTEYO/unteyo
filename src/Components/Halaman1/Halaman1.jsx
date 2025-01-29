@@ -2,14 +2,57 @@ import React, { useEffect } from 'react'
 import "./Halaman1.css"
 import laptopHal1 from "../../assets/laptopHal1.png"
 import { handleResponsive } from '../../handleResponsive'
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+// Register ScrollTrigger plugin if you're using it
+gsap.registerPlugin(ScrollTrigger);
 
 function Halaman1() {
   const {windowWidth, tampilanMobile} = handleResponsive()
-
+  
   useEffect(() => {
-    console.log(`Lebar sekarang: ${windowWidth}`); 
-    console.log(`Tampilan mobile: ${tampilanMobile}`);
-  }, [windowWidth, tampilanMobile])
+    const animasi = gsap.utils.toArray(".headingHalaman1")
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    }
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const service = entry.target
+          const judul = service.querySelector(".judulHalaman1")
+
+          ScrollTrigger.create({
+            trigger: service,
+            start: "top 80%",
+            end: "bottom 80%",
+            scrub: true,
+            onUpdate: (self) => {
+              let progress = self.progress;
+              let position = -100 + (100 * progress); // Adjust this logic to move from left to right
+              gsap.to(judul, {
+                x: position,
+                duration: 0.1,
+                ease: "none",
+              });
+            }
+          })
+        }
+      });
+    }
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    animasi.forEach((element) => observer.observe(element));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [windowWidth, tampilanMobile]);
 
   return (
     <div className={`containerHalaman1 ${
@@ -35,4 +78,4 @@ function Halaman1() {
   )
 }
 
-export default Halaman1
+export default Halaman1;

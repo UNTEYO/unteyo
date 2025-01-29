@@ -9,7 +9,6 @@
     color: white;
     font-family: HelveticaNow;
     gap: 1vh;
-    /* nambah */
     position: relative;
 }
 
@@ -18,6 +17,7 @@
     font-family: HelveticaBold;
     position: relative;
     bottom: 5vh;
+    animation: slideInLeft 2s ease forwards; /* Apply the animation */
 }
 
 .judulLanding2 {
@@ -25,6 +25,7 @@
     font-weight: 100;
     position: relative;
     bottom: 4vh;
+    animation: slideInRight 2s ease forwards;
 }
 
 .btnLanding {
@@ -39,6 +40,7 @@
     transition: 0.3s;
     position: relative;
     top: 21vh;
+    animation: slideDown 2s ease forwards;
 }
 
 .btnLanding:hover {
@@ -53,6 +55,7 @@
     font-weight: 400;
     top: 25vh;
     font-family: HelveticaMiring;
+    animation: slideDown 2s ease forwards;
 }
 
 .wave-container {
@@ -72,11 +75,7 @@
     height: 5px;
     border-radius: 0%;
     background-color: red;
-    /* Warna titik */
 }
-
-
-/* nambah div baru */
 
 .content-container {
     position: relative;
@@ -106,3 +105,49 @@
 .mobile-tagLanding {
     font-size: 3vw;
 }
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+/* 
+@keyframes slideBack {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.judulLanding.slide-back {
+    animation: slideBack 0.5s ease forwards; /* Apply the slide back animation 
+} */

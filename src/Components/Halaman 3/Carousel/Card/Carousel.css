@@ -4,7 +4,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Ensure cards are aligned to the start */
     margin-top: 7vh;
-    gap: 5vw;
+    padding-left: 5vw; /* Add padding to the left */
+    padding-right: 5vw; /* Add padding to the right */
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
+
+.carousel-content {
+    display: flex; /* Ensure the cards are displayed in a row */
+    gap: 5vw; /* Add gap between cards */
+}
+

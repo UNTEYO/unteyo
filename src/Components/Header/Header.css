@@ -124,10 +124,14 @@ ul {
 
 .mobile-hamburgerClose {
     font-size: 12.5vw;
-    margin: 3%;
+    margin-top: 2vh;
+    margin-left: 5vw;
 }
 
 .mobile-logoClose {
     width: 24vw;
-    margin-left: 65vw;
+    left: 56vw;
+    position: relative;
+    top: -1.8vh;
+
 }
