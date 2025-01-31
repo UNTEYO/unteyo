@@ -11,10 +11,13 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector(".containerHeader");
+      const Logo = document.querySelector(".logoHeader")
       if (window.scrollY > 0) {
         header.classList.add("scrolled");
+        Logo.classList.add("scrolledLogo")
       } else {
         header.classList.remove("scrolled");
+        Logo.classList.remove("scrolledLogo")
       }
     };
 

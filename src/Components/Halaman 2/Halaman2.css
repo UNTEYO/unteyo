@@ -16,6 +16,7 @@
     margin-top: 15vh;
     font-size: 4vw;
     font-family: HelveticaBold;
+    color: white;
 }
 
 .ContainerisiHalaman2 {
@@ -67,6 +68,10 @@
 
 .imgHal2 {
     width: 8vw;
+}
+
+.mobile-containerHalaman2 {
+    height: 80vh;
 }
 
 .mobile-judulHalaman2 {

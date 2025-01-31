@@ -1,4 +1,5 @@
 import { handleResponsive } from "../../../handleResponsive";
+import "./Tagline.css"
 
 function Tagline({ author, authorName, author1 }) {
   const { windowWidth, tampilanMobile } = handleResponsive();

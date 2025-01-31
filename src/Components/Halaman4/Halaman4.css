@@ -24,6 +24,7 @@
 }
 
 .headingHalaman4 {
+  color: white;
   font-size: 4vw;
   font-family: HelveticaBold;
 }
@@ -55,6 +56,7 @@
 }
 
 .heading4 {
+  color: white;
   font-size: 1.7vw;
   margin-bottom: 1vw;
   font-family: HelveticaNow;
@@ -242,13 +244,20 @@
     height: 21vw;
   }
 }
+
+.mobile-page-4 {
+  height: 86vh;
+}
 .mobile-abstract-container {
-  right: 15%;
+  right: 13%;
+  top: 65%;
+  opacity: 0.8;
+
 }
 .mobile-photo-container {
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 50%;
   background: linear-gradient(#8b8b8b1a, #000000),
     url("../../assets/anggota2.png");
   background-size: contain;
@@ -256,6 +265,12 @@
   background-repeat: no-repeat;
   top: 1vw;
 }
+
+.mobile-isiHalaman4 {
+  position: relative;
+  top: -5%;
+}
+
 .mobile-dukunganNpartner {
   justify-content: center;
   margin-right: 0;
@@ -263,16 +278,19 @@
   text-align: center;
 }
 .mobile-heading4 {
+  color: white;
+  font-family: HelveticaNow;
   font-size: 4vw;
   margin-bottom: 2vw;
 }
 .mobile-headingHalaman4 {
-  font-size: 5vw;
+  font-size: 7vw;
 }
 .headingHalaman4Small {
-  font-size: 4.3vw;
+  font-size: 6vw;
 }
 .mobile-logoDukungan{
   min-width: 60px;
+  max-width: 14vw;
 }
 

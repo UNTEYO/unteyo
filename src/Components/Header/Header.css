@@ -1,25 +1,37 @@
 .containerHeader {
     width: 100vw;
+    height: 8vw;
     position: fixed;
     top: 0;
     display: flex;
     flex-direction: row;
     z-index: 4;
     backdrop-filter: blur(0);
-    transition: max-height 0.5s; /* Change to max-height transition */
+    transition: backdrop-filter  0.5s; /* Change to max-height transition */
+    transition: height 0.1s ease-in-out;
 
 }
 
 .scrolled {
     backdrop-filter: blur(1vw);
-    transition: max-height 0.5s; /* Ensure transition applies to max-height */
+    height: 6vw;
+    transition:  backdrop-filter 0.5s; /* Ensure transition applies to max-height */
+    transition: height 0.1s ease-in-out;
 }
+
+
 
 .logoHeader {
     width: 7.5vw;
     top: -1vh;
     left: 20vw;
     margin-left: 20vw;
+    transition: width 0.3s;
+}
+
+.scrolledLogo {
+    width: 5.5vw;
+    transition: width 0.7s;
 }
 
 .navbarHeader {
@@ -57,6 +69,7 @@ ul {
     width: 100vw;
     display: flex;
     flex-direction: row;
+    height: 14.5vh;
 }
 
 .mobile-logoHeader {
@@ -78,6 +91,7 @@ ul {
 }
 
 .mobile-hamburgerHeader {
+    color: white;
     display: block;
     font-size: 12.5vw;
     margin-top: 2vh;
@@ -113,7 +127,7 @@ ul {
 
 .mobile-navClose {
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
     background-color: black;
     position: absolute;
     top: 34vh;
@@ -126,12 +140,14 @@ ul {
     font-size: 12.5vw;
     margin-top: 2vh;
     margin-left: 5vw;
+    color: white;
 }
 
 .mobile-logoClose {
     width: 24vw;
     left: 56vw;
     position: relative;
-    top: -1.8vh;
+    top: -1.5vh;
+    height: 15vh;
 
 }

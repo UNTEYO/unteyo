@@ -16,7 +16,9 @@ function Halaman2() {
     }, [windowWidth, tampilanMobile])
 
   return (
-    <div className='containerHalaman2'>
+    <div className={`containerHalaman2 ${
+      tampilanMobile ? "mobile-containerHalaman2" : "containerHalaman2"
+    }`}>
       <h2 className={`judulHalaman2 ${
         tampilanMobile ? "mobile-judulHalaman2" : "judulHalaman2"
       }`}>Our Program</h2>

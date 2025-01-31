@@ -14,7 +14,7 @@ function MainLanding() {
     const lenis = new Lenis()
 
     function raf(time) {
-      lenis.raf(time)
+      lenis.raf(time*1.25)
       requestAnimationFrame(raf)
     }
 
