@@ -1,5 +1,3 @@
-
-
 .containerLower {
   background-color: #191c1f;
   display: flex;
@@ -173,8 +171,8 @@
 .gambarIndo:hover {
   transform: scale(1.1);
 }
-.mobile-containerLower{
-    justify-content: center;
+.mobile-containerLower {
+  justify-content: center;
 }
 .mobile-lowerMain {
   display: flex;
@@ -241,19 +239,23 @@
   align-items: center;
 }
 .mobile-lastLower {
-    align-items: center;
+  align-items: center;
 }
 .mobile-location {
-    font-size: 2.4vw;
+  font-size: 2.4vw;
 }
 .mobile-gambarIndo {
   width: 4vw;
   max-width: 90px;
 }
 .mobile-country {
-
 }
 .mobile-controllerSettings {
-    font-size: 2.3vw;
-    flex-wrap: wrap;
+  font-size: 2.3vw;
+  flex-wrap: wrap;
+}
+.a-footer {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
