@@ -11,7 +11,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<MainLanding />} />
-        <Route path="/privacy&policy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cookiepolicy" element={<CookiePolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
