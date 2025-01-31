@@ -103,10 +103,18 @@ export default function Lower() {
                 : "controllerSettings"
             }`}
           >
-            <p>Privacy Policy</p>
-            <p>Terms & Conditions</p>
-            <p>Cookie Policy</p>
-            <p>Recruitment Privacy</p>
+            <a className="a-footer" href="#/privacy-policy">
+              Privacy Policy
+            </a>
+            <a className="a-footer" href="#/privacy-policy">
+              Terms & Conditions
+            </a>
+            <a className="a-footer" href="#/cookiepolicy">
+              Cookie Policy
+            </a>
+            <a className="a-footer" href="#/privacy-policy">
+              Recruitment Privacy
+            </a>
           </div>
         </div>
       </div>
