@@ -5,6 +5,9 @@ export default function ListSegment({
   listHeadline,
   listHeadline1,
   listHeadline2,
+  href1,
+  href2,
+  href3,
 }) {
   const { windowWidth, tampilanMobile } = handleResponsive();
 
@@ -29,7 +32,7 @@ export default function ListSegment({
             }`}
           >
             <a
-              href="#"
+              href={href1}
               className={`isiHeadline ${
                 tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
               }`}
@@ -37,7 +40,7 @@ export default function ListSegment({
               {listHeadline}
             </a>
             <a
-              href="#"
+              href={href2}
               className={`isiHeadline ${
                 tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
               }`}
@@ -45,7 +48,7 @@ export default function ListSegment({
               {listHeadline1}
             </a>
             <a
-              href="#"
+              href={href3}
               className={`isiHeadline ${
                 tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
               }`}
