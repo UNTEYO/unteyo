@@ -53,7 +53,7 @@ export default function Lower() {
             <ListSegment
               headLine="Products"
               listHeadline="Program"
-              href1=  "product"
+              href1="product"
               listHeadline1="News"
               listHeadline2="Product"
             ></ListSegment>
