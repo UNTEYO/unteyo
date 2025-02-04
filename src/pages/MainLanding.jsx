@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import Decor from "../Components/Landing/Decor";
 import Landing from "../Components/Landing/Landing";
@@ -12,19 +12,19 @@ import Footer from "../Components/Footer/Footer";
 
 function MainLanding() {
   useEffect(() => {
-    const lenis = new Lenis()
+    const lenis = new Lenis();
 
     function raf(time) {
-      lenis.raf(time*1.25)
-      requestAnimationFrame(raf)
+      lenis.raf(time * 1.25);
+      requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf)
+    requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy()
-    }
-  }, [])
+      lenis.destroy();
+    };
+  }, []);
   return (
     <div className="containerAll">
       <Header></Header>

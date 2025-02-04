@@ -18,6 +18,7 @@ function Halaman3() {
       }`}
     >
       <div
+        id="product"
         className={`containerHalaman3 ${
           tampilanMobile ? "mobile-containerHalaman3" : "containerHalaman3"
         }`}
