@@ -18,12 +18,14 @@
 .containerNews {
     width: 100vw;
     height: max-content;
-    background-color: red;
     position: relative;
+    background-color: black;
+    color: white;
     top: 5vh;
     display: flex;
     justify-content: center;
     align-items: start;
+    gap: 3vw;
 }
 
 .newsItem {
@@ -41,12 +43,15 @@
     gap: 2vh;
     height: 15vh;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+    border: 1.2vw solid black;
 }
 
-.newsHover {
+.news1:hover {
     height: 40vh;
     border: 1.5vw solid white;
+    background-color: white;
+    color: black;
 }
 
 .news1 h3 {
@@ -68,7 +73,15 @@
     gap: 2vh;
     height: 15vh;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+    border: 1.2vw solid black;
+}
+
+.news2:hover {
+    height: 40vh;
+    border: 1.5vw solid white;
+    background-color: white;
+    color: black;
 }
 
 .news2 h3 {
@@ -90,7 +103,15 @@
     gap: 2vh;
     height: 15vh;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+    border: 1.2vw solid black;
+}
+
+.news3:hover {
+    height: 40vh;
+    border: 1.5vw solid white;
+    background-color: white;
+    color: black;
 }
 
 .news3 h3 {
@@ -101,4 +122,14 @@
 .news3 p {
     font-size: 1vw;
     font-family: HelveticaNow;
+}
+
+.newsActive {
+    border: 1vw solid white;
+    background-color: white;
+    color: black;
+}
+
+.imgNews {
+    width: 20vw;
 }
