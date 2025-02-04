@@ -80,19 +80,40 @@ function News() {
     }
     if (isHovered == false) {
         if (number == 1) {
+            if(windowWidth > 768) {
             news1.classList.add("newsActive");
             news2.classList.remove("newsActive");
             news3.classList.remove("newsActive");
+            }
+            if (windowWidth < 768) {
+                news1.classList.add("newsActive-mobile");
+                news2.classList.remove("newsActive-mobile");
+                news3.classList.remove("newsActive-mobile");
+            }
             img.src = News1;
         } else if (number == 2) {
-            news1.classList.remove("newsActive");
+            if (windowWidth > 768) {
+                news1.classList.remove("newsActive");
             news2.classList.add("newsActive");
             news3.classList.remove("newsActive");
+            }
+            if (windowWidth < 768) {
+                news1.classList.remove("newsActive-mobile");
+                news2.classList.add("newsActive-mobile");
+                news3.classList.remove("newsActive-mobile");
+            }
             img.src = News2;
         } else if (number == 3) {
+           if (windowWidth > 768) {
             news1.classList.remove("newsActive");
             news2.classList.remove("newsActive");
             news3.classList.add("newsActive");
+           }
+           if (windowWidth < 768) {
+            news1.classList.remove("newsActive-mobile");
+            news2.classList.remove("newsActive-mobile");
+            news3.classList.add("newsActive-mobile");
+        }
             img.src = News3;}
     }
 

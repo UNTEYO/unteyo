@@ -130,6 +130,10 @@
     color: black;
 }
 
+.newsActive-mobile {
+    color: red;
+}
+
 .imgNews {
     width: 20vw;
 }
