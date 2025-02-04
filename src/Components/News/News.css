@@ -17,8 +17,88 @@
 
 .containerNews {
     width: 100vw;
-    height: 60vh;
-    background-color: white;
+    height: max-content;
+    background-color: red;
     position: relative;
     top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.newsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.news1 {
+    width: 30vw;
+    background-color: none;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: 15vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.newsHover {
+    height: 40vh;
+    border: 1.5vw solid white;
+}
+
+.news1 h3 {
+    font-size: 1.3vw;
+    font-family: HelveticaBold;
+}
+
+.news1 p {
+    font-size: 1vw;
+    font-family: HelveticaNow;
+}
+
+.news2 {
+    width: 30vw;
+    background-color: none;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: 15vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.news2 h3 {
+    font-size: 1.3vw;
+    font-family: HelveticaBold;
+}
+
+.news2 p {
+    font-size: 1vw;
+    font-family: HelveticaNow;
+}
+
+.news3 {
+    width: 30vw;
+    background-color: none;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: 15vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.news3 h3 {
+    font-size: 1.3vw;
+    font-family: HelveticaBold;
+}
+
+.news3 p {
+    font-size: 1vw;
+    font-family: HelveticaNow;
 }
