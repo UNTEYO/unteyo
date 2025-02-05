@@ -34,7 +34,7 @@ function News() {
     if (!isHovered) {
       const interval = setInterval(() => {
         setNumber((prev) => (prev % 3) + 1);
-      }, 3000);
+      }, 1500);
       return () => clearInterval(interval);
     }
   }, [isHovered]);
