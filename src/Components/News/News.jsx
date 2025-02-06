@@ -16,17 +16,23 @@ function News() {
     {
       id: 1,
       title: "Speecless! Pria Bagikan Kisah Cintanya Saat di Bangku SMA",
+      isi: "Kisah inspiratif tentang pengalaman hidup yang mengajarkan banyak hal. Setiap kejadian memiliki makna yang mendalam.",
       image: News1,
+      link: "bla",
     },
     {
       id: 2,
       title: "Cerita Inspiratif: Perjalanan Menuju Sukses",
+      isi: "Kisah inspiratif tentang pengalaman hidup yang mengajarkan banyak hal. Setiap kejadian memiliki makna yang mendalam.",
       image: News2,
+      link: "bla",
     },
     {
       id: 3,
       title: "Menakjubkan! Perubahan Hidup dalam 30 Hari",
+      isi: "Kisah inspiratif tentang pengalaman hidup yang mengajarkan banyak hal. Setiap kejadian memiliki makna yang mendalam.",
       image: News3,
+      link: "bla",
     },
   ];
 
@@ -79,9 +85,11 @@ function News() {
             >
               <h3>{item .title}</h3>
               <p>
-                Kisah inspiratif tentang pengalaman hidup yang mengajarkan
-                banyak hal. Setiap kejadian memiliki makna yang mendalam.
+                {item.isi}
               </p>
+              <button className={`btnNews ${
+                tampilanMobile ? "mobile0btnNews" : "btnNews"
+              }`}>Read More</button>
             </div>
           ))}
         </div>
