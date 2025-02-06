@@ -14,32 +14,32 @@
     gap: 3vh;
     color: white;
     font-family: HelveticaBold;
-    margin-left: 12vw;
+    margin-left: 13vw;
 }
 
 .headingHalaman1 {
     position: relative;
     top: -5vh;
-    font-size: 4vw;
+    font-size: 3vw;
     width: max-content;
     z-index: 2;
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(0%); /* Start off-screen to the left */
     transition: transform 0.5s ease; /* Smooth transition */
 }
 
 
 .pHalaman1 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family: HelveticaNow;
     z-index: 2;
 }
 
 .imgHalaman1 {
-    width: 30vw;
-    height: 58vh;
+    width: 23vw;
+    height: 50vh;
     position: relative;
     top: 36vh;
-    left: 10vw;
+    left: 8vw;
     z-index: 2;
 }
 

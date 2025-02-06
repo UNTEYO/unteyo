@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hubung from "../../assets/LogoHubung'ins.png";
 import perspektif from "../../assets/LogoPerspektif.png";
 import terai from "../../assets/LogoTerai.png";
 import "./Halaman4.css";
+import Anggota from "../../assets/anggota.png"
 import { handleResponsive } from "../../handleResponsive";
 
 
 export default function Halaman4() {
 const { windowWidth, tampilanMobile } = handleResponsive();
+
+useEffect(() => {
+  const img = document.querySelector(".imgHal4")
+  const filter = document.querySelector(".filterImg")
+
+  filter.style.width = `${img.width}px`
+  filter.style.height = `${img.height/5}px`
+}, [])
 
 return (
 <>
@@ -21,6 +30,18 @@ return (
           }`}>
           With Us!
         </h2>
+        <div className={`containerImg ${
+          tampilanMobile ? "mobile-containerImg" : "containerImg"
+        }`}>
+          <img 
+          className={`imgHal4 ${
+            tampilanMobile ? "mobile-imgHal4" : "imgHal4"
+          }`}
+          src={Anggota}></img>
+          <div className={`filterImg ${
+            tampilanMobile ? "mobile-filterImg" : "filterImg"
+          }`}></div>
+        </div>
       </section>
       <div className={`photo-container ${ tampilanMobile ? "mobile-photo-container" : "photo-container" }`}>
         <div className={`abstract-container ${ tampilanMobile ? "mobile-abstract-container" : "abstract-container" }`}>

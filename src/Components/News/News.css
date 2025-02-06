@@ -34,7 +34,38 @@
     gap: 3vw;
 }
 
-.news1 {
+.news {
+    width: 30vw;
+    background-color: none;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: 15vh;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1.2vw solid black;
+}
+
+.news:hover {
+    height: 40vh;
+    border: 1.5vw solid white;
+    background-color: white;
+    color: black;
+}
+
+.news h3 {
+    font-size: 1.3vw;
+    font-family: HelveticaBold;
+}
+
+.news p {
+    font-size: 1vw;
+    font-family: HelveticaNow;
+}
+
+
+/* .news1 {
     width: 30vw;
     background-color: none;
     border-radius: 2vw;
@@ -122,7 +153,7 @@
 .news3 p {
     font-size: 1vw;
     font-family: HelveticaNow;
-}
+} */
 
 .newsActive {
     border: 1vw solid white;

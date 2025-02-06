@@ -68,9 +68,9 @@ function News() {
           {newsItems.map((item) => (
             <div
               key={item.id}
-              className={`news${item.id} ${
+              className={`news ${
                 number === item.id ? "newsActive" : ""
-              }`}
+              } ${tampilanMobile ? "mobile-news" : "news"}`}
               onMouseEnter={() => {
                 setIsHovered(true);
                 setNumber(item.id);
@@ -85,7 +85,6 @@ function News() {
             </div>
           ))}
         </div>
-        <h1>Random Number: {number}</h1>
       </section>
     </div>
   );

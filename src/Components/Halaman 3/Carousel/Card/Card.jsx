@@ -63,7 +63,7 @@ function Card({ id, img, judul, date1, date2, loc1, loc2, link }) {
           className={`btninfo ${tampilanMobile ? "mobile-btninfo" : "btninfo"}`}
           href={link}
         >
-          Buy Now
+          More Info
         </button>
       </div>
     </div>

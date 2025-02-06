@@ -28,7 +28,7 @@ function Halaman3() {
             tampilanMobile ? "mobile-judulHalaman3" : "judulHalaman3"
           }`}
         >
-          Upcoming and Onging Events
+          Past Events
         </h2>
         <Carousel></Carousel>
       </div>
