@@ -6,6 +6,7 @@ import Header from "../Components/Header/Header";
 import Halaman1 from "../Components/Halaman1/Halaman1";
 import Halaman2 from "../Components/Halaman 2/Halaman2";
 import News from "../Components/News/News" 
+import UpcomingEvent from "../Components/UpcomingEvent/UpcomingEvent";
 import Halaman3 from "../Components/Halaman 3/Halaman3";
 import Halaman4 from "../Components/Halaman4/Halaman4";
 import Footer from "../Components/Footer/Footer";
@@ -33,6 +34,7 @@ function MainLanding() {
       <Halaman1></Halaman1>
       <Halaman2></Halaman2>
       <News></News>
+      <UpcomingEvent></UpcomingEvent>
       <Halaman3></Halaman3>
       <Halaman4></Halaman4>
       <Footer></Footer>

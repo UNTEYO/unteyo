@@ -1,0 +1,81 @@
+.containerUpcomingEvent {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.judulUpcomingEvent {
+    font-size: 3vw;
+    font-family: HelveticaBold;
+    color: white;
+    margin-top: 10vh;
+}
+
+.containerIsi {
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 2vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding-top: 1.2%;
+}
+
+.imgUpcomingEvent {
+    width: 23vw;
+    height: 55vh;
+    border-radius: 1.5vw;
+    margin-left: 1.5vw;
+}
+
+.containerInfoEvent {
+    font-family: HelveticaNow;
+    font-size: 1vw;
+    margin-left: 3vw;
+    width: 30vw;
+    display: flex;
+    flex-direction:column;
+    color: black;
+    height: min-content;
+    margin-top: 5%;
+}
+
+.containerInfoEvent h3:nth-child(1) {
+    font-family: HelveticaBold;
+    font-size: 1.5vw;
+}
+
+.containerInfoEvent h3 {
+    font-family: HelveticaBold;
+    font-size: 1.2vw;
+}
+
+.containerInfoEvent button {
+    position: relative;
+    top: 18vh;
+    margin-top: 2vh;
+    background-color: white;
+    color: black;
+    border: 0.15vw solid black;
+    border-radius: 0.5vw;
+    width: 15vw;
+    height: 5vh;
+    transition: 0.5s;
+    font-family: HelveticaNow;
+    font-size: 0.7vw;
+}
+
+.containerInfoEvent button:hover {
+    background-color: black;
+    border: 0.15vw solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
