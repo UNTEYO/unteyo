@@ -14,8 +14,8 @@ useEffect(() => {
   const img = document.querySelector(".imgHal4")
   const filter = document.querySelector(".filterImg")
 
-  filter.style.width = `${img.width}px`
-  filter.style.height = `${img.height/5}px`
+  // filter.style.width = `${img.width}px`
+  // filter.style.height = `${img.height/4}px`
 }, [])
 
 return (
@@ -40,20 +40,16 @@ return (
           src={Anggota}></img>
           <div className={`filterImg ${
             tampilanMobile ? "mobile-filterImg" : "filterImg"
-          }`}></div>
+          }`}>
+          </div>
         </div>
       </section>
-      <div className={`photo-container ${ tampilanMobile ? "mobile-photo-container" : "photo-container" }`}>
-        <div className={`abstract-container ${ tampilanMobile ? "mobile-abstract-container" : "abstract-container" }`}>
+      <div className={`abstract-container ${ tampilanMobile ? "mobile-abstract-container" : "abstract-container" }`}>
           <div className={`blob blob-1 ${ tampilanMobile ? "mobile-blob-1" : "blob-1" }`}></div>
           <div className={`blob blob-2 ${ tampilanMobile ? "mobile-blob-2" : "blob-2" }`}></div>
           <div className={`blob blob-3 ${ tampilanMobile ? "mobile-blob-3" : "blob-3" }`}></div>
         </div>
-      </div>
-      <div className={`triangle-gradient ${ tampilanMobile ? "mobile-triangle-gradient" : "triangle-gradient" }`}></div>
-      <div className={`right-triangle-gradient ${ tampilanMobile ? "mobile-right-triangle-gradient"
-        : "right-triangle-gradient" }`}></div>
-      <div className={`dukunganNpartner ${ tampilanMobile ? "mobile-dukunganNpartner" : "dukunganNpartner" }`}>
+        <div className={`dukunganNpartner ${ tampilanMobile ? "mobile-dukunganNpartner" : "dukunganNpartner" }`}>
         <section>
           <h4 className={`${tampilanMobile ? "mobile-heading4" : "heading4" }`}>
             Supported By :
