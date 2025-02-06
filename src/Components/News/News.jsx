@@ -67,10 +67,10 @@ function News() {
       >
         <img
           ref={imgRef}
-          className={`imgNews ${tampilanMobile ? "mobile-imgNews" : ""}`}
+          className={`imgNews ${tampilanMobile ? "mobile-imgNews" : "imgNews"}`}
           alt="Berita Farhankun"
         />
-        <div className={`newsItem ${tampilanMobile ? "newsItem-mobile" : ""}`}>
+        <div className={`newsItem ${tampilanMobile ? "mobile-newsItem" : "newsItem"}`}>
           {newsItems.map((item) => (
             <div
               key={item.id}
@@ -88,7 +88,7 @@ function News() {
                 {item.isi}
               </p>
               <button className={`btnNews ${
-                tampilanMobile ? "mobile0btnNews" : "btnNews"
+                tampilanMobile ? "mobile-btnNews" : "btnNews"
               }`}>Read More</button>
             </div>
           ))}

@@ -117,3 +117,50 @@
 .imgNews {
     width: 20vw;
 }
+
+.mobile-containerNews-page {
+    height: 100vh; 
+    overflow-y: auto;
+    position: relative;
+}
+
+.mobile-judulNews {
+    font-size: 7vw;
+}
+
+.mobile-containerNews {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-imgNews {
+    width: 40vw;
+}
+
+.mobile-newsItem {
+    height: 37vh;
+}
+
+.mobile-news {
+    width: 50vw;
+    height: 9vh;
+}
+
+.mobile-news:hover {
+    height: 20vh;
+}
+
+.mobile-news h3 {
+    font-size: 3vw;
+}
+
+.mobile-news p {
+    font-size: 2.3vw;
+}
+
+.mobile-btnNews {
+    top: 5%;
+    width:20vw;
+    height: 3vh;
+}

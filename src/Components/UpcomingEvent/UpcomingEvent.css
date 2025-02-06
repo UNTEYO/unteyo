@@ -79,3 +79,45 @@
     transition: 0.5s;
     cursor: pointer;
 }
+
+.mobile-judulUpcomingEvent {
+    font-size: 7vw;
+}
+
+.mobile-containerIsi {
+    flex-direction: column;
+    height: 67vh;
+    margin-top: 6vh;
+}
+
+.mobile-imgUpcomingEvent {
+    width: 55vw;
+    margin-left: 2.5vw;
+    margin-top: 1vh;
+    height: 40vh;
+}
+
+.mobile-containerInfoEvent {
+    width: 60vw
+}
+
+.mobile-containerInfoEvent h3:nth-child(1) {
+    font-size: 3vw;
+}
+
+.mobile-containerInfoEvent h3 {
+    font-size: 3vw;
+}
+
+.mobile-containerInfoEvent p {
+    font-size: 2vw;
+}
+
+.mobile-containerInfoEvent button {
+    top: 4vh;
+    width: 34vw;
+    height: 5vw;
+    margin-top: 1vh;
+    font-size: 1.5vw;
+    border-radius: 1.5vw;
+}
