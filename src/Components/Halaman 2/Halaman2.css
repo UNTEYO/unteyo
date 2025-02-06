@@ -80,8 +80,12 @@
     top: -8vh;
 }
 
+.mobile-ContainerisiHalaman2 {
+    width: 102vw;
+}
+
 .mobile-isiHalaman2 {
-    width: 20vw;
+    width: 15vw;
     flex-direction: column-reverse;
 }
 
