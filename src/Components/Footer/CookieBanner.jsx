@@ -1,8 +1,10 @@
 import "./cb.css";
 import { useState } from "react";
+import { handleResponsive } from "../../handleResponsive";
 
 export default function CookieBanner() {
   const [isVisible, setIsVisible] = useState(true);
+  const { windowWidth, tampilanMobile } = handleResponsive();
 
   const handleClose = () => {
     setIsVisible(false);
@@ -13,14 +15,26 @@ export default function CookieBanner() {
       <div className="bannerCookies">
         <div className="blur-bannerCookies"></div>
         <div className="main-bannerCookies">
-          <div className="left-bannerCookies">
+          <div
+            className={`left-bannerCookies ${
+              tampilanMobile
+                ? "mobile-left-bannerCookies"
+                : "left-bannerCookies"
+            }`}
+          >
             <button onClick={handleClose} className="silang-bannerCookies">
               ×
             </button>
             <p className="explain-bannerCookies">We use cookies</p>
           </div>
           <div className="right-bannerCookies">
-            <p className="isi-bannerCookies">
+            <p
+              className={`isi-bannerCookies ${
+                tampilanMobile
+                  ? "mobile-isi-bannerCookies"
+                  : "isi-bannerCookies"
+              }`}
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
               provident nobis a officia eius odit fugiat, assumenda ut quis
               deserunt quo alias tempore, cumque saepe voluptatibus nemo. Magnam
@@ -35,7 +49,13 @@ export default function CookieBanner() {
               laudantium animi quos hic, accusantium sed.
             </p>
             <hr />
-            <div className="button-bannerCookies">
+            <div
+              className={`button-bannerCookies ${
+                tampilanMobile
+                  ? "mobile-button-bannerCookies"
+                  : "button-bannerCookies"
+              }`}
+            >
               <div className="leftButton-bannerCookies">
                 <button className="buttonchild-bannerCookies">
                   Accept all
