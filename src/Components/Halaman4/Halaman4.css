@@ -51,6 +51,7 @@
 }
 
 .filterImg {
+  display: none;
   width: 2000vw;
   height: 25vh;
   background-color: black;
@@ -263,29 +264,46 @@
 }
 
 .mobile-page-4 {
-  height: 86vh;
+  height: 70vh;
 }
+
+.mobile-containerHalaman4 {
+  height: 70vh;
+}
+
 .mobile-abstract-container {
   right: 13%;
   top: 65%;
   opacity: 0.8;
 
 }
-.mobile-photo-container {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(#8b8b8b1a, #000000),
-    url("../../assets/anggota2.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 1vw;
-}
 
 .mobile-isiHalaman4 {
   position: relative;
   top: -5%;
+}
+
+
+.mobile-containerImg {
+  display: grid;
+  grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.mobile-imgHal4 {
+  width: 160vw;
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+  left: -25%;
+}
+
+.mobile-img2Hal4 {
+  width: 160vw;
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+  left: 25%;
 }
 
 .mobile-dukunganNpartner {

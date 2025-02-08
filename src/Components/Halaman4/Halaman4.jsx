@@ -11,8 +11,11 @@ export default function Halaman4() {
 const { windowWidth, tampilanMobile } = handleResponsive();
 
 useEffect(() => {
-  const img = document.querySelector(".imgHal4")
-  const filter = document.querySelector(".filterImg")
+  const page = document.querySelector(".mobile-page4")
+  const container = document.querySelector(".mobile-containerHalaman4")
+
+  container.style.width = `${page.width}px`
+  container.style.height = `${page.height}px`
 
   // filter.style.width = `${img.width}px`
   // filter.style.height = `${img.height/4}px`
@@ -38,11 +41,19 @@ return (
             tampilanMobile ? "mobile-imgHal4" : "imgHal4"
           }`}
           src={Anggota}></img>
-          <div className={`filterImg ${
+          <img 
+          className={`img2Hal4 ${
+            tampilanMobile ? "mobile-img2Hal4" : "imgHal4"
+          }`}
+          src={Anggota}></img>
+        </div>
+        <div className={`filterImg ${
+            tampilanMobile ? "mobile-filterImg" : "filterImg"
+          }`}>
+          </div><div className={`filterImg ${
             tampilanMobile ? "mobile-filterImg" : "filterImg"
           }`}>
           </div>
-        </div>
       </section>
       <div className={`abstract-container ${ tampilanMobile ? "mobile-abstract-container" : "abstract-container" }`}>
           <div className={`blob blob-1 ${ tampilanMobile ? "mobile-blob-1" : "blob-1" }`}></div>
