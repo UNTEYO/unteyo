@@ -11,21 +11,17 @@ export default function Halaman4() {
 const { windowWidth, tampilanMobile } = handleResponsive();
 
 useEffect(() => {
-  const page = document.querySelector(".mobile-page4")
-  const container = document.querySelector(".mobile-containerHalaman4")
 
-  container.style.width = `${page.width}px`
-  container.style.height = `${page.height}px`
-
-  // filter.style.width = `${img.width}px`
-  // filter.style.height = `${img.height/4}px`
-}, [])
+}, [windowWidth, tampilanMobile])
 
 return (
 <>
   <div className={`page-4 ${tampilanMobile ? "mobile-page-4" : "page-4" }`}>
     <div className={`containerHalaman4 ${ tampilanMobile ? "mobile-containerHalaman4" : "containerHalaman4" }`}>
       <section className={`isiHalaman4 ${ tampilanMobile ? "mobile-isiHalaman4" : "isiHalaman4" }`}>
+        <div className={`containerJudul ${
+          tampilanMobile ? "mobile-containerJudul" : "containerJudul"
+        }`}>
         <h2 className={`headingHalaman4 ${ tampilanMobile ? "mobile-headingHalaman4" : "headingHalaman4" }`}>
           Let's Connect
         </h2>
@@ -33,6 +29,7 @@ return (
           }`}>
           With Us!
         </h2>
+        </div>
         <div className={`containerImg ${
           tampilanMobile ? "mobile-containerImg" : "containerImg"
         }`}>
@@ -48,9 +45,6 @@ return (
           src={Anggota}></img>
         </div>
         <div className={`filterImg ${
-            tampilanMobile ? "mobile-filterImg" : "filterImg"
-          }`}>
-          </div><div className={`filterImg ${
             tampilanMobile ? "mobile-filterImg" : "filterImg"
           }`}>
           </div>
