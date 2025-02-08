@@ -8,6 +8,12 @@ function Landing() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0)
 
+
+  function lebar() {
+    console.log(`lebar ${window.innerWidth}`)
+    console.log(`tinggi ${window.innerHeight}`)
+  }
+
   useEffect(() => {
     const lenis = new Lenis({});
 
@@ -59,7 +65,7 @@ function Landing() {
           <button
             className={`btnLanding ${
               tampilanMobile ? "mobile-btnLanding" : "btnLanding"
-            }`}
+            }`} onClick={lebar}
           >
             Explore Our Journey
           </button>

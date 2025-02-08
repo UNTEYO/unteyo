@@ -74,7 +74,7 @@ ul {
 
 .mobile-logoHeader {
     width: 24vw;
-    height: 14.5vh;
+    height: 13.5vh;
     position: relative;
     left: 35vw;
 }
@@ -128,7 +128,7 @@ ul {
 
 .mobile-navClose {
     width: 100vw;
-    height: 12vh;
+    height: 10.5vh;
     background-color: black;
     position: absolute;
     top: 34vh;
@@ -149,6 +149,6 @@ ul {
     left: 56vw;
     position: relative;
     top: -1.5vh;
-    height: 15vh;
+    height: 13.5vh;
 
 }
