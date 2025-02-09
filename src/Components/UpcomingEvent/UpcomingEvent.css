@@ -18,7 +18,7 @@
 .containerIsi {
     width: 70vw;
     height: 60vh;
-    background-color: red;
+    background-color: none;
     border-radius: 2vw;
     margin-top: 10vh;
     display: flex;
@@ -28,13 +28,14 @@
 }
 
 .containerInfoIsi {
-    border: 0.3vw solid white;
+    border: 0.2vw solid white;
     border-radius: 1vw;
     background-color: black;
     background-color: none;
     width: 40vw;
-    height: 60vh;
+    height: 55vh;
     display: flex;
+    padding: 1.5%;
     flex-direction: row;
 }
 
@@ -108,7 +109,6 @@
 }
 
 .containerImg {
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -116,17 +116,30 @@
 
 .img {
     width: 20vw;
-    height: auto;
+    height: 50vh;
     position: relative;
     z-index: 2;
-    grid-area: 1 / 1 / 2 / 2; 
+    grid-area: 1 / 1 / 2 / 2;
+    top: -7%;
+    left: 17%;
+    border-radius: 1vw;
+    transition: 0.5s; 
+}
+
+.img:hover {
+    top: -2%;
+    left: 12%;
+    transition: 0.5s;
 }
 
 .backgroundImg {
-    width: 23vw;
-    height: 20vh;
+    width: 20vw;
+    height: 50vh;
     position: relative;
     z-index: 1;
     background-color: white;
-    grid-area: 1 / 1 / 2 / 2; 
+    grid-area: 1 / 1 / 2 / 2;
+    top: -7%;
+    left: 17%;
+    border-radius: 1vw; 
 }
