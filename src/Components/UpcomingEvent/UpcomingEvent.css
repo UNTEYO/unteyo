@@ -80,6 +80,7 @@
     display: flex;
     flex-direction: row;
     color: white;
+    gap: 1vw;
 }
 
 .btn {
@@ -108,10 +109,12 @@
     color: white;
 }
 
-.containerImg {
+.containerImgEvent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    position: relative;
+    top: 7%;
 }
 
 .img {
@@ -142,4 +145,82 @@
     top: -7%;
     left: 17%;
     border-radius: 1vw; 
+}
+
+.mobile-judulUpcomingEvent {
+    font-size: 7vw;
+    width: 50vw;
+    text-align: center;
+}
+
+.mobile-containerIsi {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-containerImgEvent {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -6%;
+    left: -5%;   
+}
+
+.mobile-img {
+    width: 40vw;
+    height: 30vh;
+}
+
+.mobile-backgroundImg {
+    width: 40vw;
+    height: 30vh;
+}
+
+.mobile-containerInfoIsi {
+    position: relative;
+    top: -3%;
+    left: 2%;
+    width: 60vw;
+    height: 28vh;
+    border-radius: 3vw;
+}
+
+.mobile-logoInfoIsi {
+    width: 8vw;
+    height: 5vh;
+}
+
+.mobile-judulInfoIsi {
+    font-size: 4vw;
+}
+
+.mobile-containerDateLoc {
+    padding-top: 5%;
+}
+
+.mobile-containerDateLoc h4 {
+    font-size: 3vw;
+}
+
+.mobile-containerDateLoc p {
+    font-size: 2vw;
+}
+
+.mobile-containerBtn {
+    gap: 2vw;
+    padding-top: 6%;
+}
+
+.mobile-btn {
+    width: 15vw;
+    height: 2.3vh;
+    font-size: 1.3vw;
+}
+
+.mobile-cta {
+    font-size: 2.5vw;
+    padding-top: 6%;
 }

@@ -58,8 +58,8 @@ function UpcomingEvent() {
                     }`}>&quot;Ekspresikan Kreativitasmu di Galery of Life&quot;</p>
                 </div>
             </div>
-            <div className={`containerImg ${
-                tampilanMobile ? "mobile-containerImg" : "containerImg"
+            <div className={`containerImgEvent ${
+                tampilanMobile ? "mobile-containerImgEvent" : "containerImgEvent"
             }`}>
                 <img className={`img ${
                     tampilanMobile ? "mobile-img" : "img"
