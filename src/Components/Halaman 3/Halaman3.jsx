@@ -30,7 +30,7 @@ function Halaman3() {
         >
           Past Events
         </h2>
-        <Carousel></Carousel>
+        <Carousel />
       </div>
     </div>
   );

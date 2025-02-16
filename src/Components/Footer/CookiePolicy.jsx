@@ -1,58 +1,142 @@
-import React, { useState } from 'react';
-import './CookiePolicy.css';
+// CookiePolicy.jsx
+import React, { useState } from "react";
+import "./CookiePolicy.css";
 
 const CookiePolicy = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
+  const [cookiePreferences, setCookiePreferences] = useState({
+    essential: true,
+    analytics: false,
+    marketing: false,
+  });
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
+  const handleToggle = (type) => {
+    if (type === "essential") return; // Essential cookies can't be disabled
+    setCookiePreferences((prev) => ({
+      ...prev,
+      [type]: !prev[type],
+    }));
+  };
+
+  const handleSave = () => {
+    console.log("Saving preferences:", cookiePreferences);
+    setShowBanner(false);
+    setIsOpen(false);
+    // Here you would typically save preferences to localStorage or backend
+  };
+
+  const handleAcceptAll = () => {
+    setCookiePreferences({
+      essential: true,
+      analytics: true,
+      marketing: true,
+    });
+    setShowBanner(false);
+    console.log("Accepted all cookies");
   };
 
   return (
-    <div className="cookie-policy-container">
-      <h1 className="cookie-policy-title">Cookie Policy</h1>
-      <p className="cookie-policy-intro">
-        We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies.
-      </p>
+    <div className="cookie-container">
 
-      <div className="accordion">
-        <button className="accordion-header" onClick={toggleAccordion}>
-          <span>What are cookies?</span>
-          <span className={`accordion-icon ${isOpen ? 'open' : ''}`}>▼</span>
-        </button>
-        <div className={`accordion-content ${isOpen ? 'open' : ''}`}>
-          <p>
-            Cookies are small text files stored on your device when you visit a website. They help the website remember your preferences and improve your browsing experience.
-          </p>
+      <div className="cookie-card">
+        <div className="cookie-header">
+          <h1>Cookie Settings</h1>
+          <button
+            type="button"
+            className={`accordion-toggle ${isOpen ? "open" : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span className="arrow"></span>
+          </button>
+        </div>
+
+        <div className={`cookie-content ${isOpen ? "open" : ""}`}>
+          {/* Essential Cookies */}
+          <div className="cookie-section">
+            <div className="cookie-section-header">
+              <div className="cookie-icon essential-icon"></div>
+              <div className="cookie-section-title">
+                <h2>Essential Cookies</h2>
+                <label className="toggle-switch disabled">
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.essential}
+                    onChange={() => handleToggle("essential")}
+                    disabled
+                  />
+                  <span className="slider"></span>
+                </label>
+              </div>
+            </div>
+            <p>
+              These cookies are necessary for the website to function and cannot
+              be disabled.
+            </p>
+          </div>
+
+          {/* Analytics Cookies */}
+          <div className="cookie-section">
+            <div className="cookie-section-header">
+              <div className="cookie-icon analytics-icon"></div>
+              <div className="cookie-section-title">
+                <h2>Analytics Cookies</h2>
+                <label className="toggle-switch">
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.analytics}
+                    onChange={() => handleToggle("analytics")}
+                  />
+                  <span className="slider"></span>
+                </label>
+              </div>
+            </div>
+            <p>
+              Help us understand how visitors interact with our website by
+              collecting and reporting information anonymously.
+            </p>
+          </div>
+
+          {/* Marketing Cookies */}
+          <div className="cookie-section">
+            <div className="cookie-section-header">
+              <div className="cookie-icon marketing-icon"></div>
+              <div className="cookie-section-title">
+                <h2>Marketing Cookies</h2>
+                <label className="toggle-switch">
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.marketing}
+                    onChange={() => handleToggle("marketing")}
+                  />
+                  <span className="slider"></span>
+                </label>
+              </div>
+            </div>
+            <p>
+              Used to track visitors across websites to display relevant
+              advertisements.
+            </p>
+          </div>
+
+          <div className="cookie-actions">
+            <button
+              type="button"
+              className="btn btn-outline"
+              onClick={() => setIsOpen(false)}
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={handleSave}
+            >
+              Save Preferences
+            </button>
+          </div>
         </div>
       </div>
-
-      <div className="cookie-settings">
-        <h2>Cookie Settings</h2>
-        <div className="toggle-switch">
-          <label>
-            <input type="checkbox" />
-            <span className="slider"></span>
-          </label>
-          <span>Enable Essential Cookies</span>
-        </div>
-        <div className="toggle-switch">
-          <label>
-            <input type="checkbox" />
-            <span className="slider"></span>
-          </label>
-          <span>Enable Analytics Cookies</span>
-        </div>
-        <div className="toggle-switch">
-          <label>
-            <input type="checkbox" />
-            <span className="slider"></span>
-          </label>
-          <span>Enable Marketing Cookies</span>
-        </div>
-      </div>
-
-      <button className="save-button">Save Preferences</button>
     </div>
   );
 };
