@@ -153,14 +153,17 @@
 
 .mobile-news h3 {
     font-size: 3vw;
+    text-align: justify;
 }
 
 .mobile-news p {
-    font-size: 2.3vw;
+    font-size: 2vw;
+    text-align: justify;
 }
 
 .mobile-btnNews {
-    top: 5%;
+    font-size: 1.2vw;
+    top: 23%;
     width:20vw;
-    height: 3vh;
+    height: 2vh;
 }

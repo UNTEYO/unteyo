@@ -54,33 +54,6 @@
 }
 
 
-/* .spray1Decor {
-    position: absolute;
-    top: -24vh;
-    right: -10vw;
-    width: 30vw;
-    z-index: 1;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.spray2Decor {
-    position: absolute;
-    overflow: hidden;
-    max-width: 100%;
-    z-index: 1;
-    bottom: -30vh;
-    left: -11vw;
-    width: 35vw;
-}
-
-.spray3Decor {
-    position: absolute;
-    width: 80vw;
-    bottom: -109.99vh;
-    left: 6vw;
-    overflow: hidden;
-} */
 
 .sprayDecor1 {
     position: absolute;
@@ -108,11 +81,11 @@
 
 .sprayDecor2 {
     position: absolute;
-    width: 20vw;
-    height: 50vh;
-    top: 68vh;
+    width: 22vw;
+    height: 60vh;
+    top: 65vh;
     border-radius: 20vw;
-    left: -7vw;
+    left: -8.5vw;
     background: radial-gradient( circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
     filter: blur(2.5vw);
     overflow: hidden;
@@ -128,7 +101,7 @@
     border-radius: 20vw;
     left: -2vw;
     background: radial-gradient( circle at 50% 50%, rgba(75, 0, 130, 1) 30%, rgba(106, 90, 205, 1) 80%);
-    filter: blur(2.5vw);
+    filter: blur(3vw);
     overflow: hidden;
     rotate: 18deg;
     z-index: 1;
@@ -141,8 +114,8 @@
     top: 75vh;
     border-radius: 20vw;
     left: -10vw;
-    background: radial-gradient( circle at 60% 63%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);
-    filter: blur(2.5vw);
+    background: radial-gradient( circle at 60% 70%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);
+    filter: blur(3.5vw);
     overflow: hidden;
     rotate: 18deg;
     z-index: 2;
@@ -170,7 +143,7 @@
 
 .mobile-loveDecor {
     width: 15.5vw;
-    top: 52vh;
+    top: 55vh;
     right: 10vw;
 }
 
@@ -192,19 +165,19 @@
 
 .mobile-sprayDecor2 {
     width: 91vw;
-    height: 50vh;
+    height: 35vh;
     border-radius: 50vw;
     top: 77vh;
-    left: -59vw;
+    left: -64vw;
     filter: blur(7vw);
 }
 
 .mobile-sprayDecor2-2 {
     width: 61vw;
-    height: 37vh;
+    height: 29vh;
     border-radius: 100vw;
-    top: 88vh;
-    left: -38vw;
+    top: 86vh;
+    left: -43vw;
     filter: blur(10vw);
 }
 
