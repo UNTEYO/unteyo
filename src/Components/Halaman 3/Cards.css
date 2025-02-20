@@ -1,0 +1,73 @@
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 90vw;
+    gap: 3vw;
+    height: 70vh;
+    position: relative;
+    top: 3vw;
+}
+
+@keyframes slideLeft {
+    to {
+        left: -30%;
+    }
+}
+
+.card {
+    display: grid;
+    position: absolute;
+    left: calc(100% + 25vw);
+    top: 0;
+    width: 23vw;
+    height: fit-content;
+    animation-name: slideLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.card-image {
+    width: 23vw;
+    height: auto;
+    border-radius: 1vw;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.card-title {
+    font-family: HelveticaBold;
+    font-size: 1.3vw;
+}
+
+.card-content {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 7%;
+    color: white;
+    backdrop-filter: blur(1vw);
+    border-radius: 1vw;
+}
+
+.containerDateLoc {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    position: relative;
+    left: -0.5vw;
+}
+
+.containerDateLoc h3 {
+    font-family: HelveticaBold;
+    font-size: 1.1vw;
+}
+
+.containerDateLoc p {
+    font-family: HelveticaNow;
+    font-size: 0.9vw;
+}
