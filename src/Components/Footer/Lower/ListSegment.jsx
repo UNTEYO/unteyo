@@ -1,3 +1,4 @@
+// ListSegment.jsx
 import { handleResponsive } from "../../../handleResponsive";
 
 export default function ListSegment({
@@ -9,55 +10,64 @@ export default function ListSegment({
   href2,
   href3,
 }) {
-  const { windowWidth, tampilanMobile } = handleResponsive();
+  const { tampilanMobile } = handleResponsive();
+
+  const clikKontrol = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <>
-      <div>
-        <li
-          className={`styleListSegment ${
-            tampilanMobile ? "mobile-styleListSegment" : "styleListSegment"
+    <div>
+      <li
+        className={`styleListSegment ${
+          tampilanMobile ? "mobile-styleListSegment" : "styleListSegment"
+        }`}
+      >
+        <p
+          className={`headLine ${
+            tampilanMobile ? "mobile-headLine" : "headLine"
           }`}
         >
-          <p
-            className={`headLine ${
-              tampilanMobile ? "mobile-headLine" : "headLine"
+          {headLine}
+        </p>
+        <div
+          className={`styleAnchorList ${
+            tampilanMobile ? "mobile-styleAnchorList" : "styleAnchorList"
+          }`}
+        >
+          <a
+            href={href1}
+            onClick={(e) => clikKontrol(e, href1?.replace("#", ""))}
+            className={`isiHeadline ${
+              tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
             }`}
           >
-            {headLine}
-          </p>
-          <div
-            className={`styleAnchorList ${
-              tampilanMobile ? "mobile-styleAnchorList" : "styleAnchorList"
+            {listHeadline}
+          </a>
+          <a
+            href={href2}
+            onClick={(e) => clikKontrol(e, href2?.replace("#", ""))}
+            className={`isiHeadline ${
+              tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
             }`}
           >
-            <a
-              href={href1}
-              className={`isiHeadline ${
-                tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
-              }`}
-            >
-              {listHeadline}
-            </a>
-            <a
-              href={href2}
-              className={`isiHeadline ${
-                tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
-              }`}
-            >
-              {listHeadline1}
-            </a>
-            <a
-              href={href3}
-              className={`isiHeadline ${
-                tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
-              }`}
-            >
-              {listHeadline2}
-            </a>
-          </div>
-        </li>
-      </div>
-    </>
+            {listHeadline1}
+          </a>
+          <a
+            href={href3}
+            onClick={(e) => clikKontrol(e, href3?.replace("#", ""))}
+            className={`isiHeadline ${
+              tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
+            }`}
+          >
+            {listHeadline2}
+          </a>
+        </div>
+      </li>
+    </div>
   );
 }

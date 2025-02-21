@@ -54,44 +54,7 @@ function Halaman3() {
         >
           Past Events
         </h2>
-        {/* <Carousel></Carousel> */}
-        <div className="cards-container"
-        >
-            {Cards.map((card) => (
-                <div key={card.id} className="card"
-                onMouseOver={() => setHoveredCardId(card.id)}
-                onMouseOut={() => setHoveredCardId(null)}
-                style={{
-                  animationDuration: hoveredCardId === card.id ? '300s' : '30s',  // Much slower on hover
-                  animationDelay: hoveredCardId === card.id ? `${(300 / 5) * (5 - card.id) * -1}s`: "",
-                  transition: 'animation-duration 0.3s'  // Smooth transition for animation speed change
-                }}
-                >
-                    <img src={card.gambar} alt={card.judul} className="card-image" />
-                    <div className="card-content"
-                    style={{
-                      opacity: hoveredCardId === card.id ? "1" : "0",
-        transition: "0.5s",
-                    }}
-                    >
-                        <h2 className="card-title">{card.judul}</h2>
-                        <div className="containerDateLoc">
-                        <div>
-                        <h3>Date</h3>
-                        <p className="card-date">{card.date}</p>
-                        </div>
-                        <div>
-                        <h3>LOCATION</h3>
-                        <p className="card-location">{card.loc}</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            ))}
-    </div>
-
-
-
+        <Carousel></Carousel>
       </div>
     </div>
   );

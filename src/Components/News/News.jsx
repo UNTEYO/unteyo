@@ -53,6 +53,7 @@ function News() {
 
   return (
     <div
+      id="news"
       className={`containerNews-page ${
         tampilanMobile ? "mobile-containerNews-page" : ""
       }`}
@@ -70,26 +71,32 @@ function News() {
           className={`imgNews ${tampilanMobile ? "mobile-imgNews" : "imgNews"}`}
           alt="Berita Farhankun"
         />
-        <div className={`newsItem ${tampilanMobile ? "mobile-newsItem" : "newsItem"}`}>
+        <div
+          className={`newsItem ${
+            tampilanMobile ? "mobile-newsItem" : "newsItem"
+          }`}
+        >
           {newsItems.map((item) => (
             <div
               key={item.id}
-              className={`news ${
-                number === item.id ? "newsActive" : ""
-              } ${tampilanMobile ? "mobile-news" : "news"}`}
+              className={`news ${number === item.id ? "newsActive" : ""} ${
+                tampilanMobile ? "mobile-news" : "news"
+              }`}
               onMouseEnter={() => {
                 setIsHovered(true);
                 setNumber(item.id);
               }}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <h3>{item .title}</h3>
-              <p>
-                {item.isi}
-              </p>
-              <button className={`btnNews ${
-                tampilanMobile ? "mobile-btnNews" : "btnNews"
-              }`}>Read More</button>
+              <h3>{item.title}</h3>
+              <p>{item.isi}</p>
+              <button
+                className={`btnNews ${
+                  tampilanMobile ? "mobile-btnNews" : "btnNews"
+                }`}
+              >
+                Read More
+              </button>
             </div>
           ))}
         </div>

@@ -6,7 +6,8 @@ import EmailInput from "./EmaiInput";
 import { handleResponsive } from "../../../handleResponsive";
 
 export default function Lower() {
-  const { windowWidth, tampilanMobile } = handleResponsive();
+  const { tampilanMobile } = handleResponsive();
+
   return (
     <>
       <div
@@ -43,7 +44,7 @@ export default function Lower() {
               Anda selalu selangkah lebih maju dan tidak melewatkan informasi
               berharga.
             </p>
-            <EmailInput></EmailInput>
+            <EmailInput />
           </section>
           <section
             className={`lowerSecond ${
@@ -53,25 +54,33 @@ export default function Lower() {
             <ListSegment
               headLine="Products"
               listHeadline="Program"
-              href1="unteyo/product"
               listHeadline1="News"
               listHeadline2="Product"
-            ></ListSegment>
+              href1="#program"
+              href2="#news"
+              href3="#product"
+            />
             <ListSegment
               headLine="Abouts"
               listHeadline="About Us"
               listHeadline1="Program"
               listHeadline2="News"
-            ></ListSegment>
+              href1="#about"
+              href2="#program"
+              href3="#news"
+            />
             <ListSegment
               headLine="Help"
               listHeadline="Dukungan"
               listHeadline1="Jaminan"
               listHeadline2="Products"
-            ></ListSegment>
+              href1="#support"
+              href2="#guarantee"
+              href3="#product"
+            />
           </section>
         </div>
-        <MediaSos></MediaSos>
+        <MediaSos />
         <div
           className={`lastLower ${
             tampilanMobile ? "mobile-lastLower" : "lastLower"
@@ -87,7 +96,7 @@ export default function Lower() {
                 tampilanMobile ? "mobile-gambarIndo" : "gambarIndo"
               }`}
               src={FotoIndonesia}
-              alt=""
+              alt="Indonesia map"
             />
             <p
               className={`country ${
