@@ -54,7 +54,27 @@ function Halaman3() {
         >
           Past Events
         </h2>
-        <Carousel></Carousel>
+        {/* <Carousel></Carousel> */}
+        <div className="cards-container">
+        {Cards.map((card, index) => (
+          <div className="card" key={index}>
+            <img src={card.gambar}></img>
+            <div className="card-content">
+              <h3 className="card.title">{card.judul}</h3>
+              <div className="containerDateLoc">
+                <div>
+                  <h4>DATE</h4>
+                  <p>{card.date}</p>
+                </div>
+                <div>
+                  <h4>LOACTION</h4>
+                  <p>{card.loc}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        </div>
       </div>
     </div>
   );
