@@ -1,43 +1,67 @@
+:root {
+  --width: 25rem;
+  --height: 33rem;
+  --quantity: 5;
+}
+
 .cards-container {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    width: 90vw;
-    gap: 3vw;
-    height: 70vh;
+    width: 90%;
+    gap: 3rem;
+    height: 40rem;
     position: relative;
-    top: 3vw;
+    top: 3.5rem;
+    /* mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000,
+      transparent
+    ); */
+    transition: 0.5s;
 }
 
-@keyframes slideLeft {
-    to {
-        left: -30%;
-    }
+.cards-container:hover .card {
+  animation-play-state: paused!important;
+  transition: 0.5s;
 }
 
 .card {
     display: grid;
     position: absolute;
-    left: calc(100% + 25vw);
+    left: 100%;
     top: 0;
-    width: 23vw;
+    width: 25rem;
     height: fit-content;
-    animation-name: slideLeft;
-    animation-duration: 30s;
+    animation-name: slideAnimation;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-delay: calc( (20s/ var(--quantity)) * (var(--position) - 1) );
+    transition: 0.5s;
 }
 
+  
+  @keyframes slideAnimation {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: calc(var(--width) * -1);
+    }
+  }
+
 .card-image {
-    width: 23vw;
+    width: 25rem;
     height: auto;
-    border-radius: 1vw;
+    border-radius: 1rem;
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .card-title {
     font-family: HelveticaBold;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
 }
 
 .card-content {
@@ -50,24 +74,75 @@
     justify-content: end;
     padding: 7%;
     color: white;
-    backdrop-filter: blur(1vw);
-    border-radius: 1vw;
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+    gap: 1rem;
 }
 
 .containerDateLoc {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
-    position: relative;
-    left: -0.5vw;
+    gap: 1rem;
+}
+
+.containerDateLoc div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .containerDateLoc h3 {
     font-family: HelveticaBold;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 .containerDateLoc p {
     font-family: HelveticaNow;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 485px) {
+  :root {
+    --width: 18rem;
+    --height: 24rem; 
+  }
+
+  .card {
+    animation-delay: calc( (20s/ var(--quantity)) * (var(--position) - 1) );
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: calc(var(--width) * -1);
+    }
+  }
+
+  .cards-container {
+    width: 280%;
+  }
+
+  .card-image {
+    width: var(--width);
+  }
+
+  .card-content {
+    width: var(--width);
+    height: var(--height);
+
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .containerDateLoc h3 {
+    font-size: 1rem;
+  }
+
+  .containerDateLoc p {
+    font-size: 0.8rem;
+  }
 }

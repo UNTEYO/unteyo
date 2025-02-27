@@ -1,5 +1,4 @@
 // ListSegment.jsx
-import { handleResponsive } from "../../../handleResponsive";
 
 export default function ListSegment({
   headLine,
@@ -10,7 +9,6 @@ export default function ListSegment({
   href2,
   href3,
 }) {
-  const { tampilanMobile } = handleResponsive();
 
   const clikKontrol = (e, targetId) => {
     e.preventDefault();
@@ -23,46 +21,34 @@ export default function ListSegment({
   return (
     <div>
       <li
-        className={`styleListSegment ${
-          tampilanMobile ? "mobile-styleListSegment" : "styleListSegment"
-        }`}
+        className="styleListSegment"
       >
         <p
-          className={`headLine ${
-            tampilanMobile ? "mobile-headLine" : "headLine"
-          }`}
+          className="headLine"
         >
           {headLine}
         </p>
         <div
-          className={`styleAnchorList ${
-            tampilanMobile ? "mobile-styleAnchorList" : "styleAnchorList"
-          }`}
+          className="styleAnchorList"
         >
           <a
             href={href1}
             onClick={(e) => clikKontrol(e, href1?.replace("#", ""))}
-            className={`isiHeadline ${
-              tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
-            }`}
+            className="isiHeadline"
           >
             {listHeadline}
           </a>
           <a
             href={href2}
             onClick={(e) => clikKontrol(e, href2?.replace("#", ""))}
-            className={`isiHeadline ${
-              tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
-            }`}
+            className="isiHeadline"
           >
             {listHeadline1}
           </a>
           <a
             href={href3}
             onClick={(e) => clikKontrol(e, href3?.replace("#", ""))}
-            className={`isiHeadline ${
-              tampilanMobile ? "mobile-isiHeadline" : "isiHeadline"
-            }`}
+            className="isiHeadline"
           >
             {listHeadline2}
           </a>

@@ -16,28 +16,20 @@ const EmailInput = () => {
 
   return (
     <div
-      className={`input-container ${
-        tampilanMobile ? "mobile-input-container" : "input-container"
-      }`}
+      className="input-container"
     >
       <div
-        className={`input-wrapper ${
-          tampilanMobile ? "mobile-input-wrapper" : "input-wrapper"
-        }`}
+        className="input-wrapper"
       >
         <input
           type="email"
           value={email}
           onChange={handleEmailChange}
           placeholder="nama@email.com"
-          className={`email-input ${
-            tampilanMobile ? "mobile-email-input" : "email-input"
-          }`}
+          className="email-input"
         />
         <button
-          className={`circle-button ${
-            tampilanMobile ? "mobile-circle-button" : "circle-button"
-          }`}
+          className="circle-button"
           onClick={handleButtonClick}
           aria-label="Submit email"
         />

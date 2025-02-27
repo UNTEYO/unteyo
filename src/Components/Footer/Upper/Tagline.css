@@ -1,9 +1,12 @@
-.mobile-subHero {
-    font-size: 2vw;
-    font-family: HelveticaNow;
+@media screen and (max-width:485px) {
+    .subHero {
+        font-size: 0.5rem;
+        font-family: HelveticaNow;
+    }
+    
+    .gambar {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
-.mobile-gambar {
-    width: 6vw;
-    height: 3.5vh;
-}

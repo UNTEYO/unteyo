@@ -1,6 +1,6 @@
 .containerHeader {
-    width: 100vw;
-    height: 8vw;
+    width: 100%;
+    height: 10rem;
     position: fixed;
     top: 0;
     display: flex;
@@ -13,8 +13,8 @@
 }
 
 .scrolled {
-    backdrop-filter: blur(1vw);
-    height: 6vw;
+    backdrop-filter: blur(3rem);
+    height: 7rem;
     transition:  backdrop-filter 0.5s; /* Ensure transition applies to max-height */
     transition: height 0.1s ease-in-out;
 }
@@ -22,15 +22,15 @@
 
 
 .logoHeader {
-    width: 7.5vw;
-    top: -1vh;
-    left: 20vw;
-    margin-left: 20vw;
+    width: 9.5rem;
+    top: -1rem;
+    left: 20rem;
+    margin-left: 22rem;
     transition: width 0.3s;
 }
 
 .scrolledLogo {
-    width: 5.5vw;
+    width: 7.5rem;
     transition: width 0.7s;
 }
 
@@ -40,10 +40,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 1.2vw;
-    gap: 6vw;
-    margin-left: 20vw;
-    position: relative;
+    font-size: 1.5rem;
+    gap: 8rem;
+    margin-left: 26rem;
 }
 
 .navbarHeader li {
@@ -62,10 +61,88 @@ ul {
 }
 
 .li-header {
-    width: 6vw;
+    width: 8rem;
 }
 
-.mobile-header {
+.humbergerHeader {
+    display: none;
+}
+
+.navClose {
+    display: none;
+}
+
+@media screen and (max-width: 485px) {
+
+    .logoHeader {
+        margin-left: 13.5rem;
+        width: 7rem;
+        height: 8.5rem;
+    }
+
+    .hamburgerHeader {
+        display: block;
+        color: #fff;
+        height: 4rem;
+        padding: 7%;
+    }
+
+    .navbarHeader {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        color: black;
+        background-color: white;
+        position: absolute;
+        top: 1rem;
+        left: -87%;
+        width: 100%;
+        height: 18rem;
+        padding: 7%;
+        transform: translateY(-50rem);
+        gap: 2rem;
+    }
+
+    .navbarHeader li {
+        color: black;
+        font-size: 1.2rem;
+        font-family: HelveticaBold;
+        width: 10rem;
+    }
+
+    .navClose {
+        width: 100%;
+        height: 7rem;
+        background-color: black;
+        position: absolute;
+        top: 19rem;
+        display: flex;
+        flex-direction: row;
+        transform: translateY(-30rem);
+    }
+
+    .scrolled {
+        height: 8rem;
+    }
+
+    .hamburgerClose {
+        font-size: 4rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: white;
+    }
+
+    .logoClose {
+        margin-left: 17rem;
+        width: 7rem;
+        height: 8.5rem;
+        position: relative;
+        top: -0.95rem;
+    }
+}
+
+/* .mobile-header {
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -151,4 +228,4 @@ ul {
     top: -1.5vh;
     height: 13.5vh;
 
-}
+} */

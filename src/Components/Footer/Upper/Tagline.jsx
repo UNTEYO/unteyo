@@ -1,31 +1,26 @@
-import { handleResponsive } from "../../../handleResponsive";
+
 import "./Tagline.css"
 
 function Tagline({ author, authorName, author1 }) {
-  const { windowWidth, tampilanMobile } = handleResponsive();
   return (
     <>
-      <div className={`hero ${tampilanMobile ? "mobile-hero" : "hero"}`}>
+      <div className="hero">
         <img
-          className={`gambar ${tampilanMobile ? "mobile-gambar" : "gambar"}`}
+          className="gambar"
           src={authorName}
           alt="Picture"
         />
         <section
-          className={`subHero ${tampilanMobile ? "mobile-subHero" : "subHero"}`}
+          className="subHero"
         >
           <p
-            className={`textUpper ${
-              tampilanMobile ? "mobile-textUpper" : "textUpper"
-            } `}
+            className="textUpper"
             style={{ color: "white" }}
           >
             {author}
           </p>
           <p
-            className={`textLower ${
-              tampilanMobile ? "mobile-textLower" : "textLower"
-            } `}
+            className="textLower"
             style={{ color: "white" }}
           >
             {author1}

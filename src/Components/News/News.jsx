@@ -54,34 +54,26 @@ function News() {
   return (
     <div
       id="news"
-      className={`containerNews-page ${
-        tampilanMobile ? "mobile-containerNews-page" : ""
-      }`}
+      className="containerNews-page"
     >
-      <h2 className={`judulNews ${tampilanMobile ? "mobile-judulNews" : ""}`}>
+      <h2 className="judulNews">
         Popular News
       </h2>
       <section
-        className={`containerNews ${
-          tampilanMobile ? "mobile-containerNews" : ""
-        }`}
+        className="containerNews"
       >
         <img
           ref={imgRef}
-          className={`imgNews ${tampilanMobile ? "mobile-imgNews" : "imgNews"}`}
+          className="imgNews"
           alt="Berita Farhankun"
         />
         <div
-          className={`newsItem ${
-            tampilanMobile ? "mobile-newsItem" : "newsItem"
-          }`}
+          className="newsItem"
         >
           {newsItems.map((item) => (
             <div
               key={item.id}
-              className={`news ${number === item.id ? "newsActive" : ""} ${
-                tampilanMobile ? "mobile-news" : "news"
-              }`}
+              className={`news ${number === item.id ? "newsActive" : ""} `}
               onMouseEnter={() => {
                 setIsHovered(true);
                 setNumber(item.id);
@@ -91,9 +83,7 @@ function News() {
               <h3>{item.title}</h3>
               <p>{item.isi}</p>
               <button
-                className={`btnNews ${
-                  tampilanMobile ? "mobile-btnNews" : "btnNews"
-                }`}
+                className="btnNews"
               >
                 Read More
               </button>

@@ -3,39 +3,27 @@ import "./lower.css";
 import MediaSos from "./MediaSos";
 import FotoIndonesia from "../../../assets/Indonesia.png";
 import EmailInput from "./EmaiInput";
-import { handleResponsive } from "../../../handleResponsive";
 
 export default function Lower() {
-  const { tampilanMobile } = handleResponsive();
 
   return (
     <>
       <div
-        className={`containerLower ${
-          tampilanMobile ? "mobile-containerLower" : "containerLower"
-        }`}
+        className="containerLower"
       >
         <div
-          className={`lowerMain ${
-            tampilanMobile ? "mobile-lowerMain" : "lowerMain"
-          }`}
+          className="lowerMain"
         >
           <section
-            className={`lowerFirst ${
-              tampilanMobile ? "mobile-lowerFirst" : "lowerFirst"
-            }`}
+            className="lowerFirst"
           >
             <h3
-              className={`heroLower ${
-                tampilanMobile ? "mobile-heroLower" : "heroLower"
-              }`}
+              className="heroLower"
             >
               Stay Updated
             </h3>
             <p
-              className={`subHeroLower ${
-                tampilanMobile ? "mobile-subHeroLower" : "subHeroLower"
-              }`}
+              className="subHeroLower"
             >
               Bergabunglah dengan komunitas kami dengan mendaftar ke buletin
               eksklusif kami. Dengan hanya mendaftar, Anda akan menerima
@@ -47,9 +35,7 @@ export default function Lower() {
             <EmailInput />
           </section>
           <section
-            className={`lowerSecond ${
-              tampilanMobile ? "mobile-lowerSecond" : "lowerSecond"
-            }`}
+            className='lowerSecond'
           >
             <ListSegment
               headLine="Products"
@@ -82,36 +68,24 @@ export default function Lower() {
         </div>
         <MediaSos />
         <div
-          className={`lastLower ${
-            tampilanMobile ? "mobile-lastLower" : "lastLower"
-          }`}
+          className='lastLower'
         >
           <div
-            className={`location ${
-              tampilanMobile ? "mobile-location" : "location"
-            }`}
+            className='location'
           >
             <img
-              className={`gambarIndo ${
-                tampilanMobile ? "mobile-gambarIndo" : "gambarIndo"
-              }`}
+              className="gambarIndo"
               src={FotoIndonesia}
               alt="Indonesia map"
             />
             <p
-              className={`country ${
-                tampilanMobile ? "mobile-country" : "country"
-              }`}
+              className='country'
             >
               Indonesia(Jawa)
             </p>
           </div>
           <div
-            className={`controllerSettings ${
-              tampilanMobile
-                ? "mobile-controllerSettings"
-                : "controllerSettings"
-            }`}
+            className="controllerSettings"
           >
             <a className="a-footer" href="#/privacy-policy">
               Privacy Policy

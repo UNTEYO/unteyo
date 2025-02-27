@@ -1,22 +1,20 @@
 .containerHalaman2 {
-    position: relative;
-    width: 100vw;
-    height: 105vh;
+    width: 100%;
     background-color: black;
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 8rem;
 }
 
 .judulHalaman2 {
-    position: relative;
-    top: -10vh;
-    margin-top: 15vh;
-    font-size: 3vw;
+    margin-top: 0rem;
+    font-size: 4rem;
     font-family: HelveticaBold;
     color: white;
+    padding-bottom: 4rem;
 }
 
 .ContainerisiHalaman2 {
@@ -26,21 +24,21 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10%;
-    width: 58vw;
+    width: 100rem;
 }
 
 .isiHalaman2 {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: HelveticaBold;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 24vw;
-    height: 20vh;
-    gap: 2vw;
+    width: 28rem;
+    height: 13rem;
+    gap: 3rem;
     margin: 1.5%;
-    border: 0.1vw solid linear-gradient(#000 20%, purple, white); /* Solid white border */
+    border: 0.1rem solid linear-gradient(#000 20%, purple, white); /* Solid white border */
 }
 /* Keyframes for spinning animation */
 @keyframes spin {
@@ -62,40 +60,43 @@
 }
 
 .isiHalaman2 h3 {
-    width: 8vw;
-    font-size: 1.5vw;
+    width: 8rem;
+    font-size: 2rem;
     color: white;
 }
 
 .imgHal2 {
-    width: 6vw;
+    width: 8rem;
 }
 
-.mobile-containerHalaman2 {
-    height: 80vh;
+@media screen and (max-width:485px) {
+    .containerHalaman2 {
+    }
+    
+    .judulHalaman2 {
+        font-size: 2rem;
+    }
+    
+    .ContainerisiHalaman2 {
+        width: 100%;
+        gap: 6%;
+    }
+    
+    .isiHalaman2 {
+        width: 7rem;
+        flex-direction: column-reverse;
+        gap: 5%;
+    }
+    
+    .isiHalaman2 h3 {
+        font-size: 1.2rem;
+        padding-left: 16%;
+    }
+    
+    
+    .imgHal2 {
+        width: 6rem;
+    }
 }
 
-.mobile-judulHalaman2 {
-    font-size: 7vw;
-    top: -8vh;
-}
 
-.mobile-ContainerisiHalaman2 {
-    width: 102vw;
-}
-
-.mobile-isiHalaman2 {
-    width: 15vw;
-    flex-direction: column-reverse;
-}
-
-.mobile-isiHalaman2 h3 {
-    font-size: 2.9vw;
-}
-
-.mobile-imgHal2 {
-}
-
-.mobile-imgHal2 {
-    width: 16vw;
-}

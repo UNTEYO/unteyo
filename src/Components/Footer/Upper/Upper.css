@@ -6,24 +6,31 @@
 .hero {
   display: flex;
   justify-content: center;
-  column-gap: 2vw;
+  column-gap: 2rem;
 }
 .subHero {
-  margin-top: 1vw;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  row-gap: 0.5vw;
+  row-gap: 0.5rem;
 }
 .gambar {
-  height: 3vw;
+  height: 5rem;
 }
 .styleTagline {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 1vw;
+  font-size: 1.3rem;
   width: 100%;
-  height: 12vh;
+  height: 8rem;
   background-color: #2d3033;
+}
+
+@media screen and (max-width:485px) {
+  .gambar {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 

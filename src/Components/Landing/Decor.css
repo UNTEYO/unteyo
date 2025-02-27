@@ -16,10 +16,10 @@
 .likeDecor {
     animation: bounce 2s infinite; /* Apply the bouncing animation */
     position: absolute;
-    width: 6.5vw;
+    width: 8rem;
     height: auto;
-    top: 23vh;
-    left: 9vw;
+    top: 15rem;
+    left: 12rem;
     z-index: 2;
 }
 
@@ -27,95 +27,77 @@
 .loveDecor {
     animation: bounce 2s infinite; /* Apply the bouncing animation */
     position: absolute;
-    width: 6.5vw;
+    width: 8rem;
     height: auto;
-    top: 23vh;
-    left: 78vw;
+    top: 40rem;
+    left: 100rem;
     z-index: 2
 }
 
-.loveDecor {
-    position: absolute;
-    width: 6.5vw;
-    height: auto;
-    top: 70vh;
-    right: 13vw;
-    /* nambah */
-    z-index: 2;
-}
+
 
 .spiralDecor {
     position: absolute;
-    width: 8.5vw;
     height: auto;
-    width: 100vw;
+    width: 50rem;
     position: absolute;
-    top: 15vh;
+    top: 15rem;
 }
 
 
 
 .sprayDecor1 {
     position: absolute;
-    width: 15vw;
-    height: 25vh;
-    border-radius: 15vw;
-    top: -10vh;
-    right: -5vw;
-    background: radial-gradient( circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
-    filter: blur(5vw);
+    width: 18rem;
+    height: 17rem;
+    border-radius: 15rem;
+    top: -8rem;
+    right: -7rem;
+    background: -webkit-radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+    filter: blur(100px);
     overflow: hidden;
 }
 
 .sprayDecor1-1 {
     position: absolute;
-    width: 15vw;
-    height: 25vh;
-    border-radius: 15vw;
-    top: -1vh;
-    right: -9vw;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 15rem;
+    top: -1rem;
+    right: -20rem;
+    background: -webkit-radial-gradient( circle at 50% 50%, rgba(255, 165, 0, 0.7) 10%, rgba(255, 165, 0, 0.3) 100%);
     background: radial-gradient( circle at 50% 50%, rgba(255, 165, 0, 0.7) 10%, rgba(255, 165, 0, 0.3) 100%);
-    filter: blur(8vw);
+    filter: blur(100px);
     overflow: hidden;
 }
 
 .sprayDecor2 {
     position: absolute;
-    width: 22vw;
-    height: 60vh;
-    top: 65vh;
-    border-radius: 20vw;
-    left: -8.5vw;
+    width: 25rem;
+    height: 33rem;
+    top: 43rem;
+    border-radius: 20rem;
+    left: -10rem;
+    background: -webkit-radial-gradient( circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
     background: radial-gradient( circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
-    filter: blur(2.5vw);
+    filter: blur(90px);
     overflow: hidden;
     rotate: 18deg;
     z-index: 2;
 }
 
-.sprayDecor2-2 {
-    position: absolute;
-    width: 20vw;
-    height: 50vh;
-    top: 52vh;
-    border-radius: 20vw;
-    left: -2vw;
-    background: radial-gradient( circle at 50% 50%, rgba(75, 0, 130, 1) 30%, rgba(106, 90, 205, 1) 80%);
-    filter: blur(3vw);
-    overflow: hidden;
-    rotate: 18deg;
-    z-index: 1;
-}
 
 .sprayDecor2-2 {
     position: absolute;
-    width: 20vw;
-    height: 40vh;
-    top: 75vh;
-    border-radius: 20vw;
-    left: -10vw;
+    width: 23rem;
+    height: 30rem;
+    top: 45rem;
+    border-radius: 20rem;
+    left: -10rem;
+    background: -webkit-radial-gradient( circle at 60% 70%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);
     background: radial-gradient( circle at 60% 70%, rgba(255, 255, 255, 1) 20%, rgba(255, 69, 0, 1) 80%);
-    filter: blur(3.5vw);
+    filter: blur(90px);
     overflow: hidden;
     rotate: 18deg;
     z-index: 2;
@@ -123,69 +105,74 @@
 
 .sprayDecor3 {
     position: absolute;
-    width: 50vw;
-    height: 60vh;
-    top: 127vh;
-    border-radius: 20vw;
+    width: 53rem;
+    height: 53rem;
+    top: 75rem;
+    border-radius: 20rem;
     left: 48vw;
     background: radial-gradient( circle at 50% 50%, rgba(255, 69, 0, 1) 40%, rgba(255, 165, 0, 1) 60%);
-    filter: blur(13vw);
+    filter: blur(250px);
     overflow: hidden;
     rotate: 18deg;
     z-index: 2;
 }
 
-.mobile-likeDecor {
-    width: 13.5vw;
-    top: 20vh;
-    left: 12vw;
+@media screen and (max-width:485px) {
+    .likeDecor {
+        width: 5rem;
+        top: 11rem;
+        left: 4rem;
+    }
+    
+    .loveDecor {
+        width: 5rem;
+        top: 35rem;
+        right: 0;
+        left: 20rem;
+    }
+    
+    .sprayDecor1 {
+        width: 15rem;
+        height: 13rem;
+        border-radius: 30rem;
+        top: -6rem;
+        right: -7rem;
+    }
+    
+    .sprayDecor1-1 {
+        width: 15rem;
+        height: 13rem;
+        border-radius: 35rem;
+        top: -6rem;
+        right: -7rem;
+    }
+    
+    .sprayDecor2 {
+        width: 20rem;
+        height: 22rem;
+        border-radius: 20rem;
+        top: 43rem;
+        left: -12rem;
+        filter: blur(100px);
+    }
+    
+    .sprayDecor2-2 {
+        width: 20rem;
+        height: 22rem;
+        border-radius: 20rem;
+        top: 43rem;
+        left: -12rem;
+        filter: blur(100px);
+    }
+    
+    .sprayDecor3 {
+        width: 20rem;
+        height: 20rem;
+        top: 80rem;
+        left: 18rem;
+        filter: blur(150px);
+        z-index: 2;
+    }
+    
 }
 
-.mobile-loveDecor {
-    width: 15.5vw;
-    top: 55vh;
-    right: 10vw;
-}
-
-.mobile-sprayDecor1 {
-    width: 40vw;
-    height: 21vh;
-    border-radius: 30vw;
-    top: -8vh;
-    right: -27vw;
-}
-
-.mobile-sprayDecor1-1 {
-    width: 45vw;
-    height: 26vh;
-    border-radius: 35vw;
-    top: -9.5vh;
-    right: -25vw;
-}
-
-.mobile-sprayDecor2 {
-    width: 91vw;
-    height: 35vh;
-    border-radius: 50vw;
-    top: 77vh;
-    left: -64vw;
-    filter: blur(7vw);
-}
-
-.mobile-sprayDecor2-2 {
-    width: 61vw;
-    height: 29vh;
-    border-radius: 100vw;
-    top: 86vh;
-    left: -43vw;
-    filter: blur(10vw);
-}
-
-.mobile-sprayDecor3 {
-    width: 72vw;
-    height: 40vh;
-    top: 150vh;
-    left: 15vw;
-    filter: blur(20vw);
-    z-index: 2;
-}

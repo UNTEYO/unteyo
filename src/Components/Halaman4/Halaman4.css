@@ -1,7 +1,6 @@
 .page-4 {
   background: linear-gradient(#9b9b9b 70%, #000000 10%);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
 }
 
 .containerHalaman4 {
@@ -11,7 +10,7 @@
   flex-direction: column;
   position: relative;
   row-gap: 0.7vw;
-  height: 100vh;
+  width: 100%;
 }
 
 .isiHalaman4 {
@@ -25,12 +24,12 @@
 
 .headingHalaman4 {
   color: white;
-  font-size: 3vw;
+  font-size: 4rem;
   font-family: HelveticaBold;
 }
 
 .headingHalaman4Small {
-  font-size: 2.4vw;
+  font-size: 3rem;
   font-family: HelveticaBold;
 }
 
@@ -39,25 +38,22 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  position: relative;
-  top: 5vh;
 }
 
 .imgHal4 {
   width: 100vw;
-  height: auto;
   grid-area: 1 / 1 / 5 / 2;
   z-index: 1;
 }
 
 .filterImg {
-  width: 2000vw;
-  height: 30vh;
+  width: 2000rem;
+  height: 35%;
   background-color: black;
   opacity: 1;
   grid-area: 4 / 1 / 5 / 2;
   z-index: 2;
-  filter: blur(3vw);
+  filter: blur(3rem);
   overflow: hidden;
   position: absolute;
   top: 65%;
@@ -69,10 +65,10 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 2vw;
-  gap: 3vw;
+  margin-right: 2rem;
+  gap: 3rem;
   width: 100%;
-  row-gap: 2vw;
+  row-gap: 2rem;
   position: relative;
   top: 4%;
   right: 3%;
@@ -98,6 +94,10 @@
   max-width: 10vw;
   height: auto;
   object-fit: contain;
+}
+
+.img2Hal4 {
+  display: none;
 }
 
 @keyframes containerRotate {
@@ -161,8 +161,8 @@
   position: absolute;
   top: 50%;
   left: 0%;
-  width: 20vw;
-  height: 20vw;
+  width: 28rem;
+  height: 28rem;
   animation: containerRotate 20s linear infinite;
   z-index: 2;
 }
@@ -185,8 +185,8 @@
 }
 
 .blob-1 {
-  width: 10vw;
-  height: 10vw;
+  width: 12rem;
+  height: 12rem;
   background: #b22e15;
   top: 0;
   left: 30%;
@@ -194,19 +194,19 @@
 }
 
 .blob-2 {
-  width: 12vw;
-  height: 12vw;
+  width: 14rem;
+  height: 14rem;
   background: #e0c39f;
-  bottom: 0.7vw;
+  bottom: 0.7rem;
   left: 0;
   animation-delay: -2s;
 }
 
 .blob-3 {
-  width: 11vw;
-  height: 11vw;
+  width: 13rem;
+  height: 13rem;
   background: #d67e45;
-  bottom: 1.3vw;
+  bottom: 1.3rem;
   right: 0;
   animation-delay: -4s;
 }
@@ -217,139 +217,121 @@
     transform: translate(0, 0) rotate(0deg);
   }
   33% {
-    transform: translate(2.5vw, -2.5vw) rotate(120deg);
+    transform: translate(2.5rem, -2.5rem) rotate(120deg);
   }
   66% {
-    transform: translate(-2.5vw, 2.5vw) rotate(240deg);
+    transform: translate(-2.5rem, 2.5rem) rotate(240deg);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .abstract-container {
-    width: 30vw;
-    height: 30vw;
-  }
-  .blob-1 {
-    width: 15vw;
-    height: 15vw;
-  }
-  .blob-2 {
-    width: 17vw;
-    height: 17vw;
-  }
-  .blob-3 {
-    width: 16vw;
-    height: 16vw;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .abstract-container {
-    width: 40vw;
-    height: 40vw;
+    width: 13rem;
+    height: 13rem;
   }
   .blob-1 {
-    width: 20vw;
-    height: 20vw;
+    width: 5rem;
+    height: 5rem;
   }
   .blob-2 {
-    width: 22vw;
-    height: 22vw;
+    width: 7rem;
+    height: 7rem;
   }
   .blob-3 {
-    width: 21vw;
-    height: 21vw;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .page-4 {
+    width: 100%;
+  }
+  
+  .containerHalaman4 {
+    width: 100%;
+  }
+  
+  .abstract-container {
+    left: -10%;
+    top: 60%;
+    opacity: 0.8;
+  
+  }
+  
+  .isiHalaman4 {
+    position: relative;
+    top: 2%;
+  }
+  
+  .containerJudul {
+    position: relative;
+    top: -47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerImg {
+    display: grid;
+    grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 7rem;
+  }
+  
+  .imgHal4 {
+    width: 200%;
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    left: -100%;
+    top: 18%;
+  }
+  
+  .img2Hal4 {
+    width: 200%;
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    left:0%;
+    top: -28%;
+  }
+  
+  .filterImg {
+    filter: blur(25px);
+    top: 90%;
+    height: 9rem;
+  }
+  
+  .dukunganNpartner {
+    justify-content: center;
+    margin-right: 0;
+    gap: 3rem;
+    text-align: center;
+    position: relative;
+    top: 0.5%;
+    left: 2%;
+  }
+  .heading4 {
+    color: white;
+    font-family: HelveticaNow;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .headingHalaman4 {
+    font-size: 2rem;
+  }
+  
+  .headingHalaman4Small {
+    font-size: 2rem;
+  }
+  
+  .logoDukungan{
+    min-width: 60px;
+    max-width: 5rem;
   }
 }
 
-.mobile-page-4 {
-  width: 100%;
-  height: 75vh;
-}
 
-.mobile-containerHalaman4 {
-  width: 100%;
-  height: 100vh;
-}
-
-.mobile-abstract-container {
-  left: -10%;
-  top: 49%;
-  opacity: 0.8;
-
-}
-
-.mobile-isiHalaman4 {
-  position: relative;
-  top: 2%;
-}
-
-.mobile-containerJudul {
-  position: relative;
-  top: -47%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile-containerImg {
-  display: grid;
-  grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-position: relative;
-top: -13%;
-}
-
-.mobile-imgHal4 {
-  width: 230vw;
-  grid-area: 1 / 1 / 2 / 2;
-  position: relative;
-  left: -22%;
-  top: 18%;
-}
-
-.mobile-img2Hal4 {
-  width: 190vw;
-  grid-area: 1 / 1 / 2 / 2;
-  position: relative;
-  left: 28%;
-  top: -28%;
-}
-
-.mobile-filterImg {
-  filter: blur(6.5vw);
-  top: 77%;
-  height: 14vh;
-}
-
-.mobile-dukunganNpartner {
-  justify-content: center;
-  margin-right: 0;
-  gap: 5vw;
-  text-align: center;
-  position: relative;
-  top: 0.5%;
-  left: 2%;
-}
-.mobile-heading4 {
-  color: white;
-  font-family: HelveticaNow;
-  font-size: 4vw;
-  margin-bottom: 2vw;
-}
-.mobile-headingHalaman4 {
-  font-size: 6vw;
-}
-
-.mobile-headingHalaman4Small {
-  font-size: 4vw;
-}
-
-.mobile-logoDukungan{
-  min-width: 60px;
-  max-width: 14vw;
-}
 

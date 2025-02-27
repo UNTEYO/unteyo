@@ -1,69 +1,68 @@
 .containerNews-page {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-bottom: 10rem;
 }
 
 .judulNews {
-    margin-top: 15vh;
+    margin-top: 12rem;
     color: white;
     font-family: HelveticaBold ;
-    font-size: 3vw;
+    font-size: 4rem;
 }
 
 .containerNews {
-    width: 100vw;
+    width: 100%;
     height: max-content;
-    position: relative;
     background-color: black;
     color: white;
-    top: 5vh;
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 3vw;
+    margin-top: 5%;
+    gap: 5rem;
 }
 
 .newsItem {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 0vw;
-    height: 70vh;
+    gap: 0rem;
+    height: 45rem;
 }
 
 .news {
-    width: 30vw;
+    width: 33rem;
     background-color: none;
-    border-radius: 2vw;
+    border-radius: 1.3rem;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
-    height: 17vh;
+    gap: 1.5rem;
+    height: 14rem;
     overflow: hidden;
     transition: 0.3s;
-    border: 1vw solid black;
+    border: 1rem solid black;
     padding: 1.5%;
 }
 
 .news:hover {
-    height: 40vh;
-    border: 1.5vw solid white;
+    height: 20rem;
+    border: 1.8rem solid white;
     background-color: white;
     color: black;
 }
 
 .news h3 {
-    font-size: 1.3vw;
+    font-size: 1.5rem;
     font-family: HelveticaBold;
 }
 
 .news p {
-    font-size: 1vw;
+    font-size: 1.2rem;
     font-family: HelveticaNow;
 }
 
@@ -82,7 +81,7 @@
 }
 
 .newsActive {
-    border: 1vw solid white;
+    border: 1rem solid white;
     background-color: white;
     color: black;
 }
@@ -91,13 +90,12 @@
 .btnNews {
     width: 10vw;
     height: 5vh;
-    position: relative;
-    top: 30%;
-    border-radius: 0.7vw;
+    margin-top: 5%;
+    border-radius: 0.8rem;
     background-color: white;
-    border: 0.15vw solid black;
+    border: 0.15rem solid black;
     font-family: HelveticaNow;
-    font-size: 0.7vw;
+    font-size: 0.85rem;
     transition: 0.5s;
 }
 
@@ -118,52 +116,58 @@
     width: 20vw;
 }
 
-.mobile-containerNews-page {
-    height: 100vh; 
-    overflow-y: auto;
-    position: relative;
-}
-
-.mobile-judulNews {
-    font-size: 7vw;
-}
-
-.mobile-containerNews {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile-imgNews {
-    width: 40vw;
-}
-
-.mobile-newsItem {
-    height: 37vh;
-}
-
-.mobile-news {
-    width: 50vw;
-    height: 9vh;
-}
-
-.mobile-news:hover {
-    height: 20vh;
-}
-
-.mobile-news h3 {
-    font-size: 3vw;
-    text-align: justify;
-}
-
-.mobile-news p {
-    font-size: 2vw;
-    text-align: justify;
-}
-
-.mobile-btnNews {
-    font-size: 1.2vw;
-    top: 23%;
-    width:20vw;
-    height: 2vh;
+@media screen and (max-width:485px) {
+    .containerNews-page { 
+        overflow-y: auto;
+        position: relative;
+    }
+    
+    .judulNews {
+        font-size: 2rem;
+    }
+    
+    .containerNews {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgNews {
+        width: 15rem;
+        margin-top: 3%;
+    }
+    
+    .newsItem {
+        height: 15rem;
+    }
+    
+    .news {
+        width: 18rem;
+        height: 7rem;
+        border-radius: 1rem;
+        padding: 0%;
+    }
+    
+    .news:hover {
+        height: 12rem;
+        border: 1.2rem solid white;
+    }
+    
+    .news h3 {
+        font-size: 1rem;
+        text-align: justify;
+    }
+    
+    .news p {
+        font-size: 0.65rem;
+        text-align: justify;
+    }
+    
+    .btnNews {
+        font-size: 0.3rem;
+        width:10rem;
+        height: 3rem;
+        border-radius: 0.3rem;
+        border: 0.08rem solid black;
+    }
 }
