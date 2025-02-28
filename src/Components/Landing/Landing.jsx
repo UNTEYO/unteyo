@@ -53,6 +53,10 @@ function Landing() {
           >
             Unteyo Journey
           </h1>
+          <h3>
+            Width : {window.innerWidth} 
+            Height: {window.innerHeight}
+          </h3>
           <h2
             className="judulLanding2"
           >

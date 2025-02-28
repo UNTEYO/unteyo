@@ -118,6 +118,37 @@
     }
 }
 
+@media screen and (max-width:385px) {
+    .containerLanding {
+        width: 100%;
+        height: 100%;
+    }
+
+    .judulLanding {
+        font-size: 2rem;
+    }
+
+    .judulLanding2 {
+        font-size: 1rem;
+    }
+    .btnLanding {
+        width: 20rem;
+        height: 4rem;
+        font-size: 0.75rem;
+        border-radius: 1rem;
+        top: 13rem;
+    }
+
+    .tagLanding {
+        font-size: 0.8rem;
+        top: 15rem;        
+    }
+
+    .wave-container {
+        top: 6rem;
+    }
+}
+
 @keyframes slideInLeft {
     0% {
         transform: translateX(100%);
